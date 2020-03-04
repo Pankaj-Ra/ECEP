@@ -1,0 +1,1319 @@
+[    0.000000] Initializing cgroup subsys cpuset
+[    0.000000] Initializing cgroup subsys cpu
+[    0.000000] Initializing cgroup subsys cpuacct
+[    0.000000] Linux version 3.13.0-53-generic (buildd@roseapple) (gcc version 4.8.2 (Ubuntu 4.8.2-19ubuntu1) ) #89-Ubuntu SMP Wed May 20 10:34:28 UTC 2015 (Ubuntu 3.13.0-53.89-generic 3.13.11-ckt19)
+[    0.000000] KERNEL supported cpus:
+[    0.000000]   Intel GenuineIntel
+[    0.000000]   AMD AuthenticAMD
+[    0.000000]   NSC Geode by NSC
+[    0.000000]   Cyrix CyrixInstead
+[    0.000000]   Centaur CentaurHauls
+[    0.000000]   Transmeta GenuineTMx86
+[    0.000000]   Transmeta TransmetaCPU
+[    0.000000]   UMC UMC UMC UMC
+[    0.000000] e820: BIOS-provided physical RAM map:
+[    0.000000] BIOS-e820: [mem 0x0000000000000000-0x000000000009ebff] usable
+[    0.000000] BIOS-e820: [mem 0x000000000009ec00-0x000000000009ffff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000000e0000-0x00000000000fffff] reserved
+[    0.000000] BIOS-e820: [mem 0x0000000000100000-0x00000000cbb6dfff] usable
+[    0.000000] BIOS-e820: [mem 0x00000000cbb6e000-0x00000000cbbf0fff] ACPI NVS
+[    0.000000] BIOS-e820: [mem 0x00000000cbbf1000-0x00000000cbd38fff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000cbd39000-0x00000000cbd4cfff] ACPI NVS
+[    0.000000] BIOS-e820: [mem 0x00000000cbd4d000-0x00000000cbe4dfff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000cbe4e000-0x00000000cbe56fff] ACPI data
+[    0.000000] BIOS-e820: [mem 0x00000000cbe57000-0x00000000cbe60fff] ACPI NVS
+[    0.000000] BIOS-e820: [mem 0x00000000cbe61000-0x00000000cbe81fff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000cbe82000-0x00000000cbe87fff] ACPI NVS
+[    0.000000] BIOS-e820: [mem 0x00000000cbe88000-0x00000000cbffffff] usable
+[    0.000000] BIOS-e820: [mem 0x00000000fec00000-0x00000000fec00fff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000fed00000-0x00000000fed00fff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000fed1c000-0x00000000fed8ffff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000ffe00000-0x00000000ffffffff] reserved
+[    0.000000] BIOS-e820: [mem 0x0000000100000000-0x000000012fffffff] usable
+[    0.000000] NX (Execute Disable) protection: active
+[    0.000000] SMBIOS 2.4 present.
+[    0.000000] DMI:                  /DG41WV, BIOS WVG4110H.86A.0015.2010.1111.1718 11/11/2010
+[    0.000000] e820: update [mem 0x00000000-0x00000fff] usable ==> reserved
+[    0.000000] e820: remove [mem 0x000a0000-0x000fffff] usable
+[    0.000000] e820: last_pfn = 0x130000 max_arch_pfn = 0x1000000
+[    0.000000] MTRR default type: uncachable
+[    0.000000] MTRR fixed ranges enabled:
+[    0.000000]   00000-9FFFF write-back
+[    0.000000]   A0000-E7FFF uncachable
+[    0.000000]   E8000-FFFFF write-protect
+[    0.000000] MTRR variable ranges enabled:
+[    0.000000]   0 base 000000000 mask F00000000 write-back
+[    0.000000]   1 base 100000000 mask FE0000000 write-back
+[    0.000000]   2 base 120000000 mask FF0000000 write-back
+[    0.000000]   3 base 0CC000000 mask FFC000000 uncachable
+[    0.000000]   4 base 0D0000000 mask FF0000000 uncachable
+[    0.000000]   5 base 0E0000000 mask FE0000000 uncachable
+[    0.000000]   6 disabled
+[    0.000000] x86 PAT enabled: cpu 0, old 0x7040600070406, new 0x7010600070106
+[    0.000000] original variable MTRRs
+[    0.000000] reg 0, base: 0GB, range: 4GB, type WB
+[    0.000000] reg 1, base: 4GB, range: 512MB, type WB
+[    0.000000] reg 2, base: 4608MB, range: 256MB, type WB
+[    0.000000] reg 3, base: 3264MB, range: 64MB, type UC
+[    0.000000] reg 4, base: 3328MB, range: 256MB, type UC
+[    0.000000] reg 5, base: 3584MB, range: 512MB, type UC
+[    0.000000] total RAM covered: 4032M
+[    0.000000] Found optimal setting for mtrr clean up
+[    0.000000]  gran_size: 64K 	chunk_size: 64K 	num_reg: 6  	lose cover RAM: 0G
+[    0.000000] New variable MTRRs
+[    0.000000] reg 0, base: 0GB, range: 2GB, type WB
+[    0.000000] reg 1, base: 2GB, range: 1GB, type WB
+[    0.000000] reg 2, base: 3GB, range: 128MB, type WB
+[    0.000000] reg 3, base: 3200MB, range: 64MB, type WB
+[    0.000000] reg 4, base: 4GB, range: 512MB, type WB
+[    0.000000] reg 5, base: 4608MB, range: 256MB, type WB
+[    0.000000] e820: update [mem 0xcc000000-0xffffffff] usable ==> reserved
+[    0.000000] found SMP MP-table at [mem 0x000fd8d0-0x000fd8df] mapped at [c00fd8d0]
+[    0.000000] Scanning 1 areas for low memory corruption
+[    0.000000] initial memory mapped: [mem 0x00000000-0x01ffffff]
+[    0.000000] Base memory trampoline at [c009a000] 9a000 size 16384
+[    0.000000] init_memory_mapping: [mem 0x00000000-0x000fffff]
+[    0.000000]  [mem 0x00000000-0x000fffff] page 4k
+[    0.000000] init_memory_mapping: [mem 0x37800000-0x379fffff]
+[    0.000000]  [mem 0x37800000-0x379fffff] page 2M
+[    0.000000] init_memory_mapping: [mem 0x34000000-0x377fffff]
+[    0.000000]  [mem 0x34000000-0x377fffff] page 2M
+[    0.000000] init_memory_mapping: [mem 0x00100000-0x33ffffff]
+[    0.000000]  [mem 0x00100000-0x001fffff] page 4k
+[    0.000000]  [mem 0x00200000-0x33ffffff] page 2M
+[    0.000000] init_memory_mapping: [mem 0x37a00000-0x37bfdfff]
+[    0.000000]  [mem 0x37a00000-0x37bfdfff] page 4k
+[    0.000000] BRK [0x01b9b000, 0x01b9bfff] PGTABLE
+[    0.000000] RAMDISK: [mem 0x34d8c000-0x366bdfff]
+[    0.000000] ACPI: RSDP 000f03c0 000024 (v02  Intel)
+[    0.000000] ACPI: XSDT cbe55e18 000044 (v01  Intel   DG41WV 00000015 MSFT 00010013)
+[    0.000000] ACPI: FACP cbe54d98 0000F4 (v04  Intel   DG41WV 00000015 MSFT 00010013)
+[    0.000000] ACPI Warning: 32/64 FACS address mismatch in FADT - two FACS tables! (20131115/tbfadt-395)
+[    0.000000] ACPI BIOS Warning (bug): 32/64X FACS address mismatch in FADT - 0xCBE58F40/0x00000000CBE5DF40, using 32 (20131115/tbfadt-522)
+[    0.000000] ACPI: DSDT cbe4e018 005AD2 (v01  Intel   DG41WV 00000015 INTL 20051117)
+[    0.000000] ACPI: FACS cbe58f40 000040
+[    0.000000] ACPI: APIC cbe54f18 00006C (v02  Intel   DG41WV 00000015 MSFT 00010013)
+[    0.000000] ACPI: MCFG cbe5fe18 00003C (v01 Intel  DG41WV   00000015 MSFT 00000097)
+[    0.000000] ACPI: HPET cbe5fd98 000038 (v01 Intel  DG41WV   00000015 AMI. 00000003)
+[    0.000000] ACPI: Local APIC address 0xfee00000
+[    0.000000] 3972MB HIGHMEM available.
+[    0.000000] 891MB LOWMEM available.
+[    0.000000]   mapped low ram: 0 - 37bfe000
+[    0.000000]   low ram: 0 - 37bfe000
+[    0.000000] BRK [0x01b9c000, 0x01b9cfff] PGTABLE
+[    0.000000] Zone ranges:
+[    0.000000]   DMA      [mem 0x00001000-0x00ffffff]
+[    0.000000]   Normal   [mem 0x01000000-0x37bfdfff]
+[    0.000000]   HighMem  [mem 0x37bfe000-0x2fffffff]
+[    0.000000] Movable zone start for each node
+[    0.000000] Early memory node ranges
+[    0.000000]   node   0: [mem 0x00001000-0x0009dfff]
+[    0.000000]   node   0: [mem 0x00100000-0xcbb6dfff]
+[    0.000000]   node   0: [mem 0xcbe88000-0xcbffffff]
+[    0.000000]   node   0: [mem 0x00000000-0x2fffffff]
+[    0.000000] On node 0 totalpages: 1031299
+[    0.000000] free_area_init_node: node 0, pgdat c19a1780, node_mem_map f278c020
+[    0.000000]   DMA zone: 32 pages used for memmap
+[    0.000000]   DMA zone: 0 pages reserved
+[    0.000000]   DMA zone: 3997 pages, LIFO batch:0
+[    0.000000]   Normal zone: 1752 pages used for memmap
+[    0.000000]   Normal zone: 224254 pages, LIFO batch:31
+[    0.000000]   HighMem zone: 7945 pages used for memmap
+[    0.000000]   HighMem zone: 803048 pages, LIFO batch:31
+[    0.000000] Using APIC driver default
+[    0.000000] ACPI: PM-Timer IO Port: 0x808
+[    0.000000] ACPI: Local APIC address 0xfee00000
+[    0.000000] ACPI: LAPIC (acpi_id[0x01] lapic_id[0x00] enabled)
+[    0.000000] ACPI: LAPIC (acpi_id[0x02] lapic_id[0x01] enabled)
+[    0.000000] ACPI: LAPIC (acpi_id[0x03] lapic_id[0x02] enabled)
+[    0.000000] ACPI: LAPIC (acpi_id[0x04] lapic_id[0x03] enabled)
+[    0.000000] ACPI: IOAPIC (id[0x04] address[0xfec00000] gsi_base[0])
+[    0.000000] IOAPIC[0]: apic_id 4, version 32, address 0xfec00000, GSI 0-23
+[    0.000000] ACPI: INT_SRC_OVR (bus 0 bus_irq 0 global_irq 2 dfl dfl)
+[    0.000000] ACPI: INT_SRC_OVR (bus 0 bus_irq 9 global_irq 9 high level)
+[    0.000000] ACPI: IRQ0 used by override.
+[    0.000000] ACPI: IRQ2 used by override.
+[    0.000000] ACPI: IRQ9 used by override.
+[    0.000000] Using ACPI (MADT) for SMP configuration information
+[    0.000000] ACPI: HPET id: 0x8086a201 base: 0xfed00000
+[    0.000000] smpboot: Allowing 4 CPUs, 0 hotplug CPUs
+[    0.000000] nr_irqs_gsi: 40
+[    0.000000] PM: Registered nosave memory: [mem 0x0009e000-0x0009efff]
+[    0.000000] PM: Registered nosave memory: [mem 0x0009f000-0x0009ffff]
+[    0.000000] PM: Registered nosave memory: [mem 0x000a0000-0x000dffff]
+[    0.000000] PM: Registered nosave memory: [mem 0x000e0000-0x000fffff]
+[    0.000000] e820: [mem 0xd0000000-0xfebfffff] available for PCI devices
+[    0.000000] Booting paravirtualized kernel on bare hardware
+[    0.000000] setup_percpu: NR_CPUS:8 nr_cpumask_bits:8 nr_cpu_ids:4 nr_node_ids:1
+[    0.000000] PERCPU: Embedded 14 pages/cpu @f7bb4000 s35520 r0 d21824 u57344
+[    0.000000] pcpu-alloc: s35520 r0 d21824 u57344 alloc=14*4096
+[    0.000000] pcpu-alloc: [0] 0 [0] 1 [0] 2 [0] 3 
+[    0.000000] Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 1029515
+[    0.000000] Kernel command line: BOOT_IMAGE=/boot/vmlinuz-3.13.0-53-generic root=UUID=e40a4c6d-7915-46b3-8558-cc6592d2034c ro quiet splash vt.handoff=7
+[    0.000000] PID hash table entries: 4096 (order: 2, 16384 bytes)
+[    0.000000] Dentry cache hash table entries: 131072 (order: 7, 524288 bytes)
+[    0.000000] Inode-cache hash table entries: 65536 (order: 6, 262144 bytes)
+[    0.000000] Initializing CPU#0
+[    0.000000] xsave: enabled xstate_bv 0x3, cntxt size 0x240
+[    0.000000] allocated 9961464 bytes of page_cgroup
+[    0.000000] please try 'cgroup_disable=memory' option if you don't want memory cgroups
+[    0.000000] Initializing HighMem for node 0 (00037bfe:00130000)
+[    0.000000] Memory: 4037688K/4125196K available (6554K kernel code, 645K rwdata, 2768K rodata, 880K init, 924K bss, 87508K reserved, 3212192K highmem)
+[    0.000000] virtual kernel memory layout:
+[    0.000000]     fixmap  : 0xfff14000 - 0xfffff000   ( 940 kB)
+[    0.000000]     pkmap   : 0xffc00000 - 0xffe00000   (2048 kB)
+[    0.000000]     vmalloc : 0xf83fe000 - 0xffbfe000   ( 120 MB)
+[    0.000000]     lowmem  : 0xc0000000 - 0xf7bfe000   ( 891 MB)
+[    0.000000]       .init : 0xc19bf000 - 0xc1a9b000   ( 880 kB)
+[    0.000000]       .data : 0xc1666e74 - 0xc19be600   (3421 kB)
+[    0.000000]       .text : 0xc1000000 - 0xc1666e74   (6555 kB)
+[    0.000000] Checking if this processor honours the WP bit even in supervisor mode...Ok.
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=4, Nodes=1
+[    0.000000] Hierarchical RCU implementation.
+[    0.000000] 	RCU dyntick-idle grace-period acceleration is enabled.
+[    0.000000] 	RCU restricting CPUs from NR_CPUS=8 to nr_cpu_ids=4.
+[    0.000000] NR_IRQS:2304 nr_irqs:712 16
+[    0.000000] CPU 0 irqstacks, hard=f6c08000 soft=f6c0a000
+[    0.000000] Console: colour dummy device 80x25
+[    0.000000] console [tty0] enabled
+[    0.000000] hpet clockevent registered
+[    0.000000] tsc: Fast TSC calibration using PIT
+[    0.000000] tsc: Detected 2660.147 MHz processor
+[    0.004001] Calibrating delay loop (skipped), value calculated using timer frequency.. 5320.29 BogoMIPS (lpj=10640588)
+[    0.004004] pid_max: default: 32768 minimum: 301
+[    0.004032] Security Framework initialized
+[    0.004051] AppArmor: AppArmor initialized
+[    0.004052] Yama: becoming mindful.
+[    0.004096] Mount-cache hash table entries: 2048 (order: 1, 8192 bytes)
+[    0.004098] Mountpoint-cache hash table entries: 2048 (order: 1, 8192 bytes)
+[    0.004312] Initializing cgroup subsys memory
+[    0.004320] Initializing cgroup subsys devices
+[    0.004322] Initializing cgroup subsys freezer
+[    0.004324] Initializing cgroup subsys blkio
+[    0.004326] Initializing cgroup subsys perf_event
+[    0.004328] Initializing cgroup subsys hugetlb
+[    0.004354] CPU: Physical Processor ID: 0
+[    0.004356] CPU: Processor Core ID: 0
+[    0.004359] mce: CPU supports 6 MCE banks
+[    0.004366] CPU0: Thermal monitoring enabled (TM2)
+[    0.004377] Last level iTLB entries: 4KB 128, 2MB 4, 4MB 4
+[    0.004377] Last level dTLB entries: 4KB 256, 2MB 0, 4MB 32
+[    0.004377] tlb_flushall_shift: -1
+[    0.004675] Freeing SMP alternatives memory: 32K (c1a9b000 - c1aa3000)
+[    0.008748] ACPI: Core revision 20131115
+[    0.011135] ACPI: All ACPI Tables successfully acquired
+[    0.011470] ftrace: allocating 27869 entries in 55 pages
+[    0.020091] Enabling APIC mode:  Flat.  Using 1 I/O APICs
+[    0.020394] ..TIMER: vector=0x30 apic1=0 pin1=2 apic2=0 pin2=0
+[    0.063740] smpboot: CPU0: Intel(R) Core(TM)2 Quad CPU    Q8400  @ 2.66GHz (fam: 06, model: 17, stepping: 0a)
+[    0.064000] Performance Events: PEBS fmt0+, 4-deep LBR, Core2 events, Intel PMU driver.
+[    0.064000] ... version:                2
+[    0.064000] ... bit width:              40
+[    0.064000] ... generic registers:      2
+[    0.064000] ... value mask:             000000ffffffffff
+[    0.064000] ... max period:             000000007fffffff
+[    0.064000] ... fixed-purpose events:   3
+[    0.064000] ... event mask:             0000000700000003
+[    0.064000] CPU 1 irqstacks, hard=f6d00000 soft=f6d02000
+[    0.064000] x86: Booting SMP configuration:
+[    0.008000] Initializing CPU#1
+[    0.074862] NMI watchdog: enabled on all CPUs, permanently consumes one hw-PMU counter.
+[    0.064000] .... node  #0, CPUs:      #1
+[    0.074958] CPU 2 irqstacks, hard=f6d6a000 soft=f6d6c000
+[    0.008000] Initializing CPU#2
+[    0.074960]  #2
+[    0.088079] CPU 3 irqstacks, hard=f6d98000 soft=f6d9a000
+[    0.008000] Initializing CPU#3
+[    0.088082]  #3
+[    0.100020] x86: Booted up 1 node, 4 CPUs
+[    0.100024] smpboot: Total of 4 processors activated (21281.17 BogoMIPS)
+[    0.102436] devtmpfs: initialized
+[    0.104112] EVM: security.selinux
+[    0.104113] EVM: security.SMACK64
+[    0.104114] EVM: security.ima
+[    0.104115] EVM: security.capability
+[    0.104130] PM: Registering ACPI NVS region [mem 0xcbb6e000-0xcbbf0fff] (536576 bytes)
+[    0.104130] PM: Registering ACPI NVS region [mem 0xcbd39000-0xcbd4cfff] (81920 bytes)
+[    0.104130] PM: Registering ACPI NVS region [mem 0xcbe57000-0xcbe60fff] (40960 bytes)
+[    0.104130] PM: Registering ACPI NVS region [mem 0xcbe82000-0xcbe87fff] (24576 bytes)
+[    0.105102] pinctrl core: initialized pinctrl subsystem
+[    0.105170] regulator-dummy: no parameters
+[    0.105198] RTC time:  4:00:40, date: 06/22/15
+[    0.105236] NET: Registered protocol family 16
+[    0.105385] EISA bus registered
+[    0.105388] cpuidle: using governor ladder
+[    0.105389] cpuidle: using governor menu
+[    0.105464] ACPI: bus type PCI registered
+[    0.105467] acpiphp: ACPI Hot Plug PCI Controller Driver version: 0.5
+[    0.105536] PCI: MMCONFIG for domain 0000 [bus 00-3f] at [mem 0xf0000000-0xf3ffffff] (base 0xf0000000)
+[    0.105538] PCI: not using MMCONFIG
+[    0.124713] PCI: Using configuration type 1 for base access
+[    0.125727] bio: create slab <bio-0> at 0
+[    0.125727] ACPI: Added _OSI(Module Device)
+[    0.125727] ACPI: Added _OSI(Processor Device)
+[    0.125727] ACPI: Added _OSI(3.0 _SCP Extensions)
+[    0.125727] ACPI: Added _OSI(Processor Aggregator Device)
+[    0.128027] ACPI: Executed 1 blocks of module-level executable AML code
+[    0.130077] ACPI: SSDT cbe58c18 0002CC (v01    AMI      IST 00000001 MSFT 03000001)
+[    0.130338] ACPI: Dynamic OEM Table Load:
+[    0.130340] ACPI: SSDT   (null) 0002CC (v01    AMI      IST 00000001 MSFT 03000001)
+[    0.130655] ACPI: Interpreter enabled
+[    0.130665] ACPI Exception: AE_NOT_FOUND, While evaluating Sleep State [\_S1_] (20131115/hwxface-580)
+[    0.130669] ACPI Exception: AE_NOT_FOUND, While evaluating Sleep State [\_S2_] (20131115/hwxface-580)
+[    0.130682] ACPI: (supports S0 S3 S4 S5)
+[    0.130683] ACPI: Using IOAPIC for interrupt routing
+[    0.130705] PCI: MMCONFIG for domain 0000 [bus 00-3f] at [mem 0xf0000000-0xf3ffffff] (base 0xf0000000)
+[    0.130738] PCI: MMCONFIG at [mem 0xf0000000-0xf3ffffff] reserved in ACPI motherboard resources
+[    0.130740] PCI: Using MMCONFIG for extended config space
+[    0.130752] PCI: Using host bridge windows from ACPI; if necessary, use "pci=nocrs" and report a bug
+[    0.130848] ACPI: No dock devices found.
+[    0.131142] [Firmware Bug]: ACPI: BIOS _OSI(Linux) query ignored
+[    0.137251] ACPI: PCI Root Bridge [PCI0] (domain 0000 [bus 00-ff])
+[    0.137256] acpi PNP0A08:00: _OSC: OS supports [ExtendedConfig ASPM ClockPM Segments MSI]
+[    0.137480] acpi PNP0A08:00: _OSC: OS now controls [PCIeHotplug PME AER PCIeCapability]
+[    0.137549] acpi PNP0A08:00: [Firmware Info]: MMCONFIG for domain 0000 [bus 00-3f] only partially covers this bridge
+[    0.137701] PCI host bridge to bus 0000:00
+[    0.137704] pci_bus 0000:00: root bus resource [bus 00-ff]
+[    0.137706] pci_bus 0000:00: root bus resource [io  0x0000-0x0cf7]
+[    0.137708] pci_bus 0000:00: root bus resource [io  0x0d00-0xffff]
+[    0.137710] pci_bus 0000:00: root bus resource [mem 0x000a0000-0x000bffff]
+[    0.137712] pci_bus 0000:00: root bus resource [mem 0xd0000000-0xffffffff]
+[    0.137720] pci 0000:00:00.0: [8086:2e30] type 00 class 0x060000
+[    0.137738] DMAR: Forcing write-buffer flush capability
+[    0.137739] DMAR: Disabling IOMMU for graphics on this chipset
+[    0.137810] pci 0000:00:01.0: [8086:2e31] type 01 class 0x060400
+[    0.137843] pci 0000:00:01.0: PME# supported from D0 D3hot D3cold
+[    0.137885] pci 0000:00:01.0: System wakeup disabled by ACPI
+[    0.137915] pci 0000:00:02.0: [8086:2e32] type 00 class 0x030000
+[    0.137926] pci 0000:00:02.0: reg 0x10: [mem 0xe0000000-0xe03fffff 64bit]
+[    0.137933] pci 0000:00:02.0: reg 0x18: [mem 0xd0000000-0xdfffffff 64bit pref]
+[    0.137938] pci 0000:00:02.0: reg 0x20: [io  0xf0f0-0xf0f7]
+[    0.138039] pci 0000:00:1b.0: [8086:27d8] type 00 class 0x040300
+[    0.138053] pci 0000:00:1b.0: reg 0x10: [mem 0xe0600000-0xe0603fff 64bit]
+[    0.138111] pci 0000:00:1b.0: PME# supported from D0 D3hot D3cold
+[    0.138182] pci 0000:00:1c.0: [8086:27d0] type 01 class 0x060400
+[    0.138242] pci 0000:00:1c.0: PME# supported from D0 D3hot D3cold
+[    0.138287] pci 0000:00:1c.0: System wakeup disabled by ACPI
+[    0.138320] pci 0000:00:1c.1: [8086:27d2] type 01 class 0x060400
+[    0.138380] pci 0000:00:1c.1: PME# supported from D0 D3hot D3cold
+[    0.138425] pci 0000:00:1c.1: System wakeup disabled by ACPI
+[    0.138459] pci 0000:00:1d.0: [8086:27c8] type 00 class 0x0c0300
+[    0.138494] pci 0000:00:1d.0: reg 0x20: [io  0xf080-0xf09f]
+[    0.138562] pci 0000:00:1d.0: System wakeup disabled by ACPI
+[    0.138592] pci 0000:00:1d.1: [8086:27c9] type 00 class 0x0c0300
+[    0.138627] pci 0000:00:1d.1: reg 0x20: [io  0xf060-0xf07f]
+[    0.138694] pci 0000:00:1d.1: System wakeup disabled by ACPI
+[    0.138726] pci 0000:00:1d.2: [8086:27ca] type 00 class 0x0c0300
+[    0.138761] pci 0000:00:1d.2: reg 0x20: [io  0xf040-0xf05f]
+[    0.138828] pci 0000:00:1d.2: System wakeup disabled by ACPI
+[    0.138857] pci 0000:00:1d.3: [8086:27cb] type 00 class 0x0c0300
+[    0.138892] pci 0000:00:1d.3: reg 0x20: [io  0xf020-0xf03f]
+[    0.138958] pci 0000:00:1d.3: System wakeup disabled by ACPI
+[    0.138997] pci 0000:00:1d.7: [8086:27cc] type 00 class 0x0c0320
+[    0.139014] pci 0000:00:1d.7: reg 0x10: [mem 0xe0604000-0xe06043ff]
+[    0.139087] pci 0000:00:1d.7: PME# supported from D0 D3hot D3cold
+[    0.139130] pci 0000:00:1d.7: System wakeup disabled by ACPI
+[    0.139162] pci 0000:00:1e.0: [8086:244e] type 01 class 0x060401
+[    0.139240] pci 0000:00:1e.0: System wakeup disabled by ACPI
+[    0.139274] pci 0000:00:1f.0: [8086:27b8] type 00 class 0x060100
+[    0.139345] pci 0000:00:1f.0: address space collision: [io  0x0800-0x087f] conflicts with ACPI CPU throttle [??? 0x00000810-0x00000815 flags 0x80000000]
+[    0.139350] pci 0000:00:1f.0: quirk: [io  0x0480-0x04bf] claimed by ICH6 GPIO
+[    0.139353] pci 0000:00:1f.0: ICH7 LPC Generic IO decode 1 PIO at 0a00 (mask 00ff)
+[    0.139444] pci 0000:00:1f.2: [8086:27c0] type 00 class 0x01018f
+[    0.139456] pci 0000:00:1f.2: reg 0x10: [io  0xf0e0-0xf0e7]
+[    0.139463] pci 0000:00:1f.2: reg 0x14: [io  0xf0d0-0xf0d3]
+[    0.139470] pci 0000:00:1f.2: reg 0x18: [io  0xf0c0-0xf0c7]
+[    0.139477] pci 0000:00:1f.2: reg 0x1c: [io  0xf0b0-0xf0b3]
+[    0.139484] pci 0000:00:1f.2: reg 0x20: [io  0xf0a0-0xf0af]
+[    0.139515] pci 0000:00:1f.2: PME# supported from D3hot
+[    0.139579] pci 0000:00:1f.3: [8086:27da] type 00 class 0x0c0500
+[    0.139625] pci 0000:00:1f.3: reg 0x20: [io  0x0400-0x041f]
+[    0.139736] pci 0000:00:01.0: PCI bridge to [bus 01]
+[    0.139785] pci 0000:00:1c.0: PCI bridge to [bus 02]
+[    0.139853] pci 0000:03:00.0: [10ec:8168] type 00 class 0x020000
+[    0.139869] pci 0000:03:00.0: reg 0x10: [io  0xe000-0xe0ff]
+[    0.139895] pci 0000:03:00.0: reg 0x18: [mem 0xe0524000-0xe0524fff 64bit pref]
+[    0.139922] pci 0000:03:00.0: reg 0x20: [mem 0xe0520000-0xe0523fff 64bit pref]
+[    0.139933] pci 0000:03:00.0: reg 0x30: [mem 0xe0500000-0xe051ffff pref]
+[    0.139993] pci 0000:03:00.0: supports D1 D2
+[    0.139995] pci 0000:03:00.0: PME# supported from D0 D1 D2 D3hot D3cold
+[    0.148017] pci 0000:00:1c.1: PCI bridge to [bus 03]
+[    0.148022] pci 0000:00:1c.1:   bridge window [io  0xe000-0xefff]
+[    0.148026] pci 0000:00:1c.1:   bridge window [mem 0xe0500000-0xe05fffff]
+[    0.148082] pci 0000:04:04.0: [10ec:8139] type 00 class 0x020000
+[    0.148114] pci 0000:04:04.0: reg 0x10: [io  0xd000-0xd0ff]
+[    0.148123] pci 0000:04:04.0: reg 0x14: [mem 0xe0400000-0xe04000ff]
+[    0.148184] pci 0000:04:04.0: supports D1 D2
+[    0.148186] pci 0000:04:04.0: PME# supported from D1 D2 D3hot D3cold
+[    0.148249] pci 0000:00:1e.0: PCI bridge to [bus 04] (subtractive decode)
+[    0.148252] pci 0000:00:1e.0:   bridge window [io  0xd000-0xdfff]
+[    0.148256] pci 0000:00:1e.0:   bridge window [mem 0xe0400000-0xe04fffff]
+[    0.148261] pci 0000:00:1e.0:   bridge window [io  0x0000-0x0cf7] (subtractive decode)
+[    0.148263] pci 0000:00:1e.0:   bridge window [io  0x0d00-0xffff] (subtractive decode)
+[    0.148265] pci 0000:00:1e.0:   bridge window [mem 0x000a0000-0x000bffff] (subtractive decode)
+[    0.148267] pci 0000:00:1e.0:   bridge window [mem 0xd0000000-0xffffffff] (subtractive decode)
+[    0.148284] pci_bus 0000:00: on NUMA node 0
+[    0.148914] ACPI: PCI Interrupt Link [LNKA] (IRQs 3 4 5 6 7 10 *11 12 14 15)
+[    0.148970] ACPI: PCI Interrupt Link [LNKB] (IRQs 3 4 5 6 7 *10 11 12 14 15)
+[    0.149028] ACPI: PCI Interrupt Link [LNKC] (IRQs 3 4 5 6 *7 10 11 12 14 15)
+[    0.149082] ACPI: PCI Interrupt Link [LNKD] (IRQs 3 4 5 6 *10 12 14 15)
+[    0.149135] ACPI: PCI Interrupt Link [LNKE] (IRQs 3 4 5 6 7 10 11 12 14 15) *0, disabled.
+[    0.149189] ACPI: PCI Interrupt Link [LNKF] (IRQs 3 4 5 6 7 10 *11 12 14 15)
+[    0.149242] ACPI: PCI Interrupt Link [LNKG] (IRQs 3 4 5 6 7 10 11 12 14 15) *0, disabled.
+[    0.149297] ACPI: PCI Interrupt Link [LNKH] (IRQs 3 4 5 6 *7 10 11 12 14 15)
+[    0.149382] ACPI: Enabled 2 GPEs in block 00 to 1F
+[    0.149388] ACPI: \_SB_.PCI0: notify handler is installed
+[    0.149418] Found 1 acpi root devices
+[    0.149495] vgaarb: setting as boot device: PCI:0000:00:02.0
+[    0.149495] vgaarb: device added: PCI:0000:00:02.0,decodes=io+mem,owns=io+mem,locks=none
+[    0.149495] vgaarb: loaded
+[    0.149495] vgaarb: bridge control possible 0000:00:02.0
+[    0.149495] SCSI subsystem initialized
+[    0.149495] libata version 3.00 loaded.
+[    0.149495] ACPI: bus type USB registered
+[    0.149495] usbcore: registered new interface driver usbfs
+[    0.149495] usbcore: registered new interface driver hub
+[    0.149495] usbcore: registered new device driver usb
+[    0.149495] PCI: Using ACPI for IRQ routing
+[    0.149495] PCI: pci_cache_line_size set to 64 bytes
+[    0.149495] e820: reserve RAM buffer [mem 0x0009ec00-0x0009ffff]
+[    0.149495] e820: reserve RAM buffer [mem 0xcbb6e000-0xcbffffff]
+[    0.149495] NetLabel: Initializing
+[    0.149495] NetLabel:  domain hash size = 128
+[    0.149495] NetLabel:  protocols = UNLABELED CIPSOv4
+[    0.149495] NetLabel:  unlabeled traffic allowed by default
+[    0.149495] HPET: 3 timers in total, 0 timers will be used for per-cpu timer
+[    0.149495] hpet0: at MMIO 0xfed00000, IRQs 2, 8, 0
+[    0.149495] hpet0: 3 comparators, 64-bit 14.318180 MHz counter
+[    0.153012] Switched to clocksource hpet
+[    0.159221] AppArmor: AppArmor Filesystem Enabled
+[    0.159259] pnp: PnP ACPI init
+[    0.159278] ACPI: bus type PNP registered
+[    0.159397] system 00:00: [mem 0xfed14000-0xfed19fff] has been reserved
+[    0.159400] system 00:00: [mem 0xf0000000-0xf3ffffff] has been reserved
+[    0.159404] system 00:00: Plug and Play ACPI device, IDs PNP0c01 (active)
+[    0.159562] system 00:01: [io  0x0800-0x087f] could not be reserved
+[    0.159565] system 00:01: [io  0x0480-0x04bf] has been reserved
+[    0.159568] system 00:01: [mem 0xfec00000-0xfec00fff] could not be reserved
+[    0.159570] system 00:01: [mem 0xfee00000-0xfee00fff] has been reserved
+[    0.159573] system 00:01: [mem 0xfed1c000-0xfed1ffff] has been reserved
+[    0.159575] system 00:01: [mem 0xfed20000-0xfed8ffff] has been reserved
+[    0.159578] system 00:01: [mem 0xff000000-0xffffffff] could not be reserved
+[    0.159581] system 00:01: Plug and Play ACPI device, IDs PNP0c02 (active)
+[    0.159713] system 00:02: Plug and Play ACPI device, IDs PNP0c02 (active)
+[    0.159977] pnp 00:03: [dma 2]
+[    0.160035] pnp 00:03: Plug and Play ACPI device, IDs PNP0700 (active)
+[    0.160231] pnp 00:04: [dma 0 disabled]
+[    0.160283] pnp 00:04: Plug and Play ACPI device, IDs PNP0501 (active)
+[    0.160480] pnp 00:05: [dma 0 disabled]
+[    0.160531] pnp 00:05: Plug and Play ACPI device, IDs PNP0501 (active)
+[    0.160819] pnp 00:06: [dma 3]
+[    0.160942] pnp 00:06: Plug and Play ACPI device, IDs PNP0401 (active)
+[    0.160953] pnp 00:07: [dma 4]
+[    0.160973] pnp 00:07: Plug and Play ACPI device, IDs PNP0200 (active)
+[    0.161026] pnp 00:08: Plug and Play ACPI device, IDs PNP0b00 (active)
+[    0.161056] pnp 00:09: Plug and Play ACPI device, IDs PNP0800 (active)
+[    0.161106] system 00:0a: [io  0x04d0-0x04d1] has been reserved
+[    0.161109] system 00:0a: Plug and Play ACPI device, IDs PNP0c02 (active)
+[    0.161138] pnp 00:0b: Plug and Play ACPI device, IDs PNP0c04 (active)
+[    0.161271] pnp 00:0c: Plug and Play ACPI device, IDs PNP0103 (active)
+[    0.161393] pnp: PnP ACPI: found 13 devices
+[    0.161395] ACPI: bus type PNP unregistered
+[    0.161398] PnPBIOS: Disabled by ACPI PNP
+[    0.199748] pci 0000:00:1c.0: bridge window [io  0x1000-0x0fff] to [bus 02] add_size 1000
+[    0.199751] pci 0000:00:1c.0: bridge window [mem 0x00100000-0x000fffff 64bit pref] to [bus 02] add_size 200000
+[    0.199754] pci 0000:00:1c.0: bridge window [mem 0x00100000-0x000fffff] to [bus 02] add_size 200000
+[    0.199761] pci 0000:00:1c.1: bridge window [mem 0x00100000-0x000fffff 64bit pref] to [bus 03] add_size 200000
+[    0.199771] pci 0000:00:1f.0: BAR 13: [io  0x0800-0x087f] has bogus alignment
+[    0.199774] pci 0000:00:1c.0: res[14]=[mem 0x00100000-0x000fffff] get_res_add_size add_size 200000
+[    0.199776] pci 0000:00:1c.0: res[15]=[mem 0x00100000-0x000fffff 64bit pref] get_res_add_size add_size 200000
+[    0.199778] pci 0000:00:1c.1: res[15]=[mem 0x00100000-0x000fffff 64bit pref] get_res_add_size add_size 200000
+[    0.199781] pci 0000:00:1c.0: res[13]=[io  0x1000-0x0fff] get_res_add_size add_size 1000
+[    0.199785] pci 0000:00:1c.0: BAR 14: assigned [mem 0xe0700000-0xe08fffff]
+[    0.199788] pci 0000:00:1c.0: BAR 15: assigned [mem 0xe0900000-0xe0afffff 64bit pref]
+[    0.199791] pci 0000:00:1c.1: BAR 15: assigned [mem 0xe0b00000-0xe0cfffff 64bit pref]
+[    0.199794] pci 0000:00:1c.0: BAR 13: assigned [io  0x1000-0x1fff]
+[    0.199797] pci 0000:00:01.0: PCI bridge to [bus 01]
+[    0.199803] pci 0000:00:1c.0: PCI bridge to [bus 02]
+[    0.199806] pci 0000:00:1c.0:   bridge window [io  0x1000-0x1fff]
+[    0.199810] pci 0000:00:1c.0:   bridge window [mem 0xe0700000-0xe08fffff]
+[    0.199814] pci 0000:00:1c.0:   bridge window [mem 0xe0900000-0xe0afffff 64bit pref]
+[    0.199819] pci 0000:00:1c.1: PCI bridge to [bus 03]
+[    0.199821] pci 0000:00:1c.1:   bridge window [io  0xe000-0xefff]
+[    0.199826] pci 0000:00:1c.1:   bridge window [mem 0xe0500000-0xe05fffff]
+[    0.199829] pci 0000:00:1c.1:   bridge window [mem 0xe0b00000-0xe0cfffff 64bit pref]
+[    0.199834] pci 0000:00:1e.0: PCI bridge to [bus 04]
+[    0.199837] pci 0000:00:1e.0:   bridge window [io  0xd000-0xdfff]
+[    0.199841] pci 0000:00:1e.0:   bridge window [mem 0xe0400000-0xe04fffff]
+[    0.199848] pci_bus 0000:00: resource 4 [io  0x0000-0x0cf7]
+[    0.199850] pci_bus 0000:00: resource 5 [io  0x0d00-0xffff]
+[    0.199852] pci_bus 0000:00: resource 6 [mem 0x000a0000-0x000bffff]
+[    0.199854] pci_bus 0000:00: resource 7 [mem 0xd0000000-0xffffffff]
+[    0.199856] pci_bus 0000:02: resource 0 [io  0x1000-0x1fff]
+[    0.199858] pci_bus 0000:02: resource 1 [mem 0xe0700000-0xe08fffff]
+[    0.199860] pci_bus 0000:02: resource 2 [mem 0xe0900000-0xe0afffff 64bit pref]
+[    0.199863] pci_bus 0000:03: resource 0 [io  0xe000-0xefff]
+[    0.199865] pci_bus 0000:03: resource 1 [mem 0xe0500000-0xe05fffff]
+[    0.199867] pci_bus 0000:03: resource 2 [mem 0xe0b00000-0xe0cfffff 64bit pref]
+[    0.199869] pci_bus 0000:04: resource 0 [io  0xd000-0xdfff]
+[    0.199871] pci_bus 0000:04: resource 1 [mem 0xe0400000-0xe04fffff]
+[    0.199873] pci_bus 0000:04: resource 4 [io  0x0000-0x0cf7]
+[    0.199875] pci_bus 0000:04: resource 5 [io  0x0d00-0xffff]
+[    0.199877] pci_bus 0000:04: resource 6 [mem 0x000a0000-0x000bffff]
+[    0.199879] pci_bus 0000:04: resource 7 [mem 0xd0000000-0xffffffff]
+[    0.199916] NET: Registered protocol family 2
+[    0.200127] TCP established hash table entries: 8192 (order: 3, 32768 bytes)
+[    0.200147] TCP bind hash table entries: 8192 (order: 4, 65536 bytes)
+[    0.200179] TCP: Hash tables configured (established 8192 bind 8192)
+[    0.200208] TCP: reno registered
+[    0.200211] UDP hash table entries: 512 (order: 2, 16384 bytes)
+[    0.200221] UDP-Lite hash table entries: 512 (order: 2, 16384 bytes)
+[    0.200274] NET: Registered protocol family 1
+[    0.200288] pci 0000:00:02.0: Video device with shadowed ROM
+[    1.800013] pci 0000:00:1d.7: EHCI: BIOS handoff failed (BIOS bug?) 01010001
+[    1.800196] PCI: CLS 64 bytes, default 64
+[    1.800257] Trying to unpack rootfs image as initramfs...
+[    2.264724] Freeing initrd memory: 25800K (f4d8c000 - f66be000)
+[    2.265007] microcode: CPU0 sig=0x1067a, pf=0x10, revision=0xa0b
+[    2.265013] microcode: CPU1 sig=0x1067a, pf=0x10, revision=0xa0b
+[    2.265033] microcode: CPU2 sig=0x1067a, pf=0x10, revision=0xa0b
+[    2.265047] microcode: CPU3 sig=0x1067a, pf=0x10, revision=0xa0b
+[    2.265125] microcode: Microcode Update Driver: v2.00 <tigran@aivazian.fsnet.co.uk>, Peter Oruba
+[    2.265128] Scanning for low memory corruption every 60 seconds
+[    2.265381] Initialise system trusted keyring
+[    2.265424] audit: initializing netlink socket (disabled)
+[    2.265448] type=2000 audit(1434945642.260:1): initialized
+[    2.285466] bounce pool size: 64 pages
+[    2.285481] HugeTLB registered 2 MB page size, pre-allocated 0 pages
+[    2.286873] zbud: loaded
+[    2.286979] VFS: Disk quotas dquot_6.5.2
+[    2.287025] Dquot-cache hash table entries: 1024 (order 0, 4096 bytes)
+[    2.287506] fuse init (API version 7.22)
+[    2.287606] msgmni has been set to 1662
+[    2.287664] Key type big_key registered
+[    2.288626] Key type asymmetric registered
+[    2.288628] Asymmetric key parser 'x509' registered
+[    2.288665] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 252)
+[    2.288743] io scheduler noop registered
+[    2.288745] io scheduler deadline registered (default)
+[    2.288771] io scheduler cfq registered
+[    2.288951] pcieport 0000:00:01.0: irq 40 for MSI/MSI-X
+[    2.289063] pcieport 0000:00:1c.0: irq 41 for MSI/MSI-X
+[    2.289198] pcieport 0000:00:1c.1: irq 42 for MSI/MSI-X
+[    2.289288] pcieport 0000:00:01.0: Signaling PME through PCIe PME interrupt
+[    2.289292] pcie_pme 0000:00:01.0:pcie01: service driver pcie_pme loaded
+[    2.289309] pcieport 0000:00:1c.0: Signaling PME through PCIe PME interrupt
+[    2.289312] pcie_pme 0000:00:1c.0:pcie01: service driver pcie_pme loaded
+[    2.289329] pcieport 0000:00:1c.1: Signaling PME through PCIe PME interrupt
+[    2.289331] pci 0000:03:00.0: Signaling PME through PCIe PME interrupt
+[    2.289335] pcie_pme 0000:00:1c.1:pcie01: service driver pcie_pme loaded
+[    2.289347] pci_hotplug: PCI Hot Plug PCI Core version: 0.5
+[    2.289379] pciehp 0000:00:1c.0:pcie04: HPC vendor_id 8086 device_id 27d0 ss_vid 8086 ss_did 5756
+[    2.289416] pciehp 0000:00:1c.0:pcie04: service driver pciehp loaded
+[    2.289427] pciehp 0000:00:1c.1:pcie04: HPC vendor_id 8086 device_id 27d2 ss_vid 8086 ss_did 5756
+[    2.289461] pciehp 0000:00:1c.1:pcie04: service driver pciehp loaded
+[    2.289466] pciehp: PCI Express Hot Plug Controller Driver version: 0.4
+[    2.289507] vesafb: mode is 1024x768x32, linelength=4096, pages=0
+[    2.289508] vesafb: scrolling: redraw
+[    2.289510] vesafb: Truecolor: size=8:8:8:8, shift=24:16:8:0
+[    2.291546] vesafb: framebuffer at 0xd0000000, mapped to 0xf8480000, using 3072k, total 3072k
+[    2.294575] Console: switching to colour frame buffer device 128x48
+[    2.297466] fb0: VESA VGA frame buffer device
+[    2.297490] intel_idle: does not run on family 6 model 23
+[    2.297496] ipmi message handler version 39.2
+[    2.297571] input: Power Button as /devices/LNXSYSTM:00/device:00/PNP0C0C:00/input/input0
+[    2.297576] ACPI: Power Button [PWRB]
+[    2.297614] input: Power Button as /devices/LNXSYSTM:00/LNXPWRBN:00/input/input1
+[    2.297616] ACPI: Power Button [PWRF]
+[    2.298868] GHES: HEST is not enabled!
+[    2.298964] isapnp: Scanning for PnP cards...
+[    2.298980] Serial: 8250/16550 driver, 32 ports, IRQ sharing enabled
+[    2.319338] 00:04: ttyS0 at I/O 0x3f8 (irq = 4, base_baud = 115200) is a 16550A
+[    2.339712] 00:05: ttyS1 at I/O 0x2f8 (irq = 3, base_baud = 115200) is a 16550A
+[    2.341514] Linux agpgart interface v0.103
+[    2.341594] agpgart-intel 0000:00:00.0: Intel G41 Chipset
+[    2.341640] agpgart-intel 0000:00:00.0: detected gtt size: 2097152K total, 262144K mappable
+[    2.342207] agpgart-intel 0000:00:00.0: detected 32768K stolen memory
+[    2.342357] agpgart-intel 0000:00:00.0: AGP aperture is 256M @ 0xd0000000
+[    2.343996] brd: module loaded
+[    2.344879] loop: module loaded
+[    2.345015] ata_piix 0000:00:1f.2: version 2.13
+[    2.345095] ata_piix 0000:00:1f.2: MAP [ P0 P2 P1 P3 ]
+[    2.348008] scsi0 : ata_piix
+[    2.360070] scsi1 : ata_piix
+[    2.360107] ata1: SATA max UDMA/133 cmd 0xf0e0 ctl 0xf0d0 bmdma 0xf0a0 irq 19
+[    2.360109] ata2: SATA max UDMA/133 cmd 0xf0c0 ctl 0xf0b0 bmdma 0xf0a8 irq 19
+[    2.360445] libphy: Fixed MDIO Bus: probed
+[    2.360543] tun: Universal TUN/TAP device driver, 1.6
+[    2.360544] tun: (C) 1999-2004 Max Krasnyansky <maxk@qualcomm.com>
+[    2.360598] PPP generic driver version 2.4.2
+[    2.360650] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[    2.360655] ehci-pci: EHCI PCI platform driver
+[    2.360737] ehci-pci 0000:00:1d.7: EHCI Host Controller
+[    2.360742] ehci-pci 0000:00:1d.7: new USB bus registered, assigned bus number 1
+[    2.360754] ehci-pci 0000:00:1d.7: debug port 1
+[    2.364656] ehci-pci 0000:00:1d.7: cache line size of 64 is not supported
+[    2.364670] ehci-pci 0000:00:1d.7: irq 23, io mem 0xe0604000
+[    2.376028] ehci-pci 0000:00:1d.7: USB 2.0 started, EHCI 1.00
+[    2.376084] usb usb1: New USB device found, idVendor=1d6b, idProduct=0002
+[    2.376087] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    2.376089] usb usb1: Product: EHCI Host Controller
+[    2.376091] usb usb1: Manufacturer: Linux 3.13.0-53-generic ehci_hcd
+[    2.376092] usb usb1: SerialNumber: 0000:00:1d.7
+[    2.376208] hub 1-0:1.0: USB hub found
+[    2.376215] hub 1-0:1.0: 8 ports detected
+[    2.376370] ehci-platform: EHCI generic platform driver
+[    2.376378] ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+[    2.376380] ohci-pci: OHCI PCI platform driver
+[    2.376389] ohci-platform: OHCI generic platform driver
+[    2.376395] uhci_hcd: USB Universal Host Controller Interface driver
+[    2.376461] uhci_hcd 0000:00:1d.0: UHCI Host Controller
+[    2.376465] uhci_hcd 0000:00:1d.0: new USB bus registered, assigned bus number 2
+[    2.376485] uhci_hcd 0000:00:1d.0: irq 23, io base 0x0000f080
+[    2.376523] usb usb2: New USB device found, idVendor=1d6b, idProduct=0001
+[    2.376526] usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    2.376527] usb usb2: Product: UHCI Host Controller
+[    2.376529] usb usb2: Manufacturer: Linux 3.13.0-53-generic uhci_hcd
+[    2.376531] usb usb2: SerialNumber: 0000:00:1d.0
+[    2.376624] hub 2-0:1.0: USB hub found
+[    2.376631] hub 2-0:1.0: 2 ports detected
+[    2.376754] uhci_hcd 0000:00:1d.1: UHCI Host Controller
+[    2.376759] uhci_hcd 0000:00:1d.1: new USB bus registered, assigned bus number 3
+[    2.376778] uhci_hcd 0000:00:1d.1: irq 19, io base 0x0000f060
+[    2.376817] usb usb3: New USB device found, idVendor=1d6b, idProduct=0001
+[    2.376819] usb usb3: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    2.376821] usb usb3: Product: UHCI Host Controller
+[    2.376823] usb usb3: Manufacturer: Linux 3.13.0-53-generic uhci_hcd
+[    2.376825] usb usb3: SerialNumber: 0000:00:1d.1
+[    2.376918] hub 3-0:1.0: USB hub found
+[    2.376924] hub 3-0:1.0: 2 ports detected
+[    2.377049] uhci_hcd 0000:00:1d.2: UHCI Host Controller
+[    2.377053] uhci_hcd 0000:00:1d.2: new USB bus registered, assigned bus number 4
+[    2.377082] uhci_hcd 0000:00:1d.2: irq 18, io base 0x0000f040
+[    2.377120] usb usb4: New USB device found, idVendor=1d6b, idProduct=0001
+[    2.377122] usb usb4: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    2.377124] usb usb4: Product: UHCI Host Controller
+[    2.377125] usb usb4: Manufacturer: Linux 3.13.0-53-generic uhci_hcd
+[    2.377127] usb usb4: SerialNumber: 0000:00:1d.2
+[    2.377222] hub 4-0:1.0: USB hub found
+[    2.377228] hub 4-0:1.0: 2 ports detected
+[    2.377351] uhci_hcd 0000:00:1d.3: UHCI Host Controller
+[    2.377356] uhci_hcd 0000:00:1d.3: new USB bus registered, assigned bus number 5
+[    2.377383] uhci_hcd 0000:00:1d.3: irq 16, io base 0x0000f020
+[    2.377420] usb usb5: New USB device found, idVendor=1d6b, idProduct=0001
+[    2.377423] usb usb5: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    2.377424] usb usb5: Product: UHCI Host Controller
+[    2.377426] usb usb5: Manufacturer: Linux 3.13.0-53-generic uhci_hcd
+[    2.377428] usb usb5: SerialNumber: 0000:00:1d.3
+[    2.377521] hub 5-0:1.0: USB hub found
+[    2.377527] hub 5-0:1.0: 2 ports detected
+[    2.377659] i8042: PNP: No PS/2 controller found. Probing ports directly.
+[    2.380269] serio: i8042 KBD port at 0x60,0x64 irq 1
+[    2.380277] serio: i8042 AUX port at 0x60,0x64 irq 12
+[    2.380397] mousedev: PS/2 mouse device common for all mice
+[    2.380527] rtc_cmos 00:08: RTC can wake from S4
+[    2.380630] rtc_cmos 00:08: rtc core: registered rtc_cmos as rtc0
+[    2.380651] rtc_cmos 00:08: alarms up to one month, y3k, 114 bytes nvram, hpet irqs
+[    2.380729] device-mapper: uevent: version 1.0.3
+[    2.380787] device-mapper: ioctl: 4.27.0-ioctl (2013-10-30) initialised: dm-devel@redhat.com
+[    2.380815] platform eisa.0: Probing EISA bus 0
+[    2.380817] platform eisa.0: EISA: Cannot allocate resource for mainboard
+[    2.380820] platform eisa.0: Cannot allocate resource for EISA slot 1
+[    2.380821] platform eisa.0: Cannot allocate resource for EISA slot 2
+[    2.380823] platform eisa.0: Cannot allocate resource for EISA slot 3
+[    2.380825] platform eisa.0: Cannot allocate resource for EISA slot 4
+[    2.380827] platform eisa.0: Cannot allocate resource for EISA slot 5
+[    2.380829] platform eisa.0: Cannot allocate resource for EISA slot 6
+[    2.380831] platform eisa.0: Cannot allocate resource for EISA slot 7
+[    2.380833] platform eisa.0: Cannot allocate resource for EISA slot 8
+[    2.380835] platform eisa.0: EISA: Detected 0 cards
+[    2.380844] cpufreq-nforce2: No nForce2 chipset.
+[    2.380847] ledtrig-cpu: registered to indicate activity on CPUs
+[    2.380978] TCP: cubic registered
+[    2.381071] NET: Registered protocol family 10
+[    2.381255] NET: Registered protocol family 17
+[    2.381265] Key type dns_resolver registered
+[    2.381447] Using IPI No-Shortcut mode
+[    2.381521] Loading compiled-in X.509 certificates
+[    2.384710] Loaded X.509 cert 'Magrathea: Glacier signing key: 79a8aa312e3881b7c6ca23e459a55bc7865f419f'
+[    2.384722] registered taskstats version 1
+[    2.386961] Key type trusted registered
+[    2.390602] Key type encrypted registered
+[    2.390605] AppArmor: AppArmor sha1 policy hashing enabled
+[    2.390608] IMA: No TPM chip found, activating TPM-bypass!
+[    2.390817] regulator-dummy: disabling
+[    2.390869]   Magic number: 3:37:10
+[    2.390876] hub 5-0:1.0: hash matches
+[    2.390956] rtc_cmos 00:08: setting system clock to 2015-06-22 04:00:42 UTC (1434945642)
+[    2.391482] BIOS EDD facility v0.16 2004-Jun-25, 0 devices found
+[    2.391484] EDD information not available.
+[    2.391532] PM: Hibernation image not present or could not be loaded.
+[    2.526893] ata2.00: ATA-8: ST500DM002-1BC142, JC4B, max UDMA/133
+[    2.526897] ata2.00: 976773168 sectors, multi 16: LBA48 NCQ (depth 0/32)
+[    2.540360] ata2.00: configured for UDMA/133
+[    2.608923] isapnp: No Plug & Play device found
+[    2.609061] scsi 1:0:0:0: Direct-Access     ATA      ST500DM002-1BC14 JC4B PQ: 0 ANSI: 5
+[    2.609214] sd 1:0:0:0: Attached scsi generic sg0 type 0
+[    2.609223] sd 1:0:0:0: [sda] 976773168 512-byte logical blocks: (500 GB/465 GiB)
+[    2.609299] sd 1:0:0:0: [sda] Write Protect is off
+[    2.609302] sd 1:0:0:0: [sda] Mode Sense: 00 3a 00 00
+[    2.609329] sd 1:0:0:0: [sda] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+[    2.679446]  sda: sda1 sda2 < sda5 sda6 sda7 sda8 > sda3 sda4
+[    2.680103] sd 1:0:0:0: [sda] Attached SCSI disk
+[    2.680421] Freeing unused kernel memory: 880K (c19bf000 - c1a9b000)
+[    2.680470] Write protecting the kernel text: 6556k
+[    2.680557] Write protecting the kernel read-only data: 2776k
+[    2.680558] NX-protecting the kernel data: 5732k
+[    2.695103] systemd-udevd[114]: starting version 204
+[    2.730272] [drm] Initialized drm 1.1.0 20060810
+[    2.730428] r8169 Gigabit Ethernet driver 2.3LK-NAPI loaded
+[    2.730640] r8169 0000:03:00.0: irq 43 for MSI/MSI-X
+[    2.730796] r8169 0000:03:00.0 eth0: RTL8168d/8111d at 0xf8410000, 38:60:77:13:a0:c1, XID 081000c0 IRQ 43
+[    2.730799] r8169 0000:03:00.0 eth0: jumbo features [frames: 9200 bytes, tx checksumming: ko]
+[    2.731190] 8139cp: 8139cp: 10/100 PCI Ethernet driver v1.3 (Mar 22, 2004)
+[    2.731202] 8139cp 0000:04:04.0: This (id 10ec:8139 rev 10) is not an 8139C+ compatible chip, use 8139too
+[    2.737014] 8139too: 8139too Fast Ethernet driver 0.9.28
+[    2.738039] 8139too 0000:04:04.0 eth1: RealTek RTL8139 at 0x0001d000, 00:20:18:d6:8a:a2, IRQ 21
+[    2.740241] FDC 0 is a post-1991 82077
+[    2.768443] [drm] Memory usable by graphics device = 2048M
+[    2.768447] checking generic (d0000000 300000) vs hw (d0000000 10000000)
+[    2.768449] fb: conflicting fb hw usage inteldrmfb vs VESA VGA - removing generic driver
+[    2.768465] Console: switching to colour dummy device 80x25
+[    2.792053] i915 0000:00:02.0: irq 44 for MSI/MSI-X
+[    2.792063] [drm] Supports vblank timestamp caching Rev 2 (21.10.2013).
+[    2.792065] [drm] Driver supports precise vblank timestamp query.
+[    2.792116] vgaarb: device changed decodes: PCI:0000:00:02.0,olddecodes=io+mem,decodes=io+mem:owns=io+mem
+[    2.909099] fbcon: inteldrmfb (fb0) is primary device
+[    2.980025] Console: switching to colour frame buffer device 170x48
+[    2.984041] i915 0000:00:02.0: fb0: inteldrmfb frame buffer device
+[    2.984043] i915 0000:00:02.0: registered panic notifier
+[    2.984104] ACPI Exception: AE_NOT_FOUND, Evaluating _DOD (20131115/video-1286)
+[    2.984108] ACPI: Video Device [GFX0] (multi-head: no  rom: yes  post: no)
+[    2.984154] input: Video Bus as /devices/LNXSYSTM:00/device:00/PNP0A08:00/LNXVIDEO:00/input/input5
+[    2.984232] [drm] Initialized i915 1.6.0 20080730 for 0000:00:02.0 on minor 0
+[    3.056033] usb 2-1: new low-speed USB device number 2 using uhci_hcd
+[    3.264022] tsc: Refined TSC clocksource calibration: 2659.999 MHz
+[    3.640047] usb 2-1: New USB device found, idVendor=046d, idProduct=c045
+[    3.640051] usb 2-1: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[    3.640053] usb 2-1: Product: USB-PS/2 Optical Mouse
+[    3.640055] usb 2-1: Manufacturer: Logitech
+[    3.649965] hidraw: raw HID events driver (C) Jiri Kosina
+[    3.669447] usbcore: registered new interface driver usbhid
+[    3.669449] usbhid: USB HID core driver
+[    3.673495] input: Logitech USB-PS/2 Optical Mouse as /devices/pci0000:00/0000:00:1d.0/usb2/2-1/2-1:1.0/input/input6
+[    3.673640] hid-generic 0003:046D:C045.0001: input,hidraw0: USB HID v1.10 Mouse [Logitech USB-PS/2 Optical Mouse] on usb-0000:00:1d.0-1/input0
+[    3.744298] EXT4-fs (sda1): mounted filesystem with ordered data mode. Opts: (null)
+[    4.264090] Switched to clocksource tsc
+[    4.292034] usb 2-2: new low-speed USB device number 3 using uhci_hcd
+[    4.652817] random: nonblocking pool is initialized
+[    4.876040] usb 2-2: New USB device found, idVendor=046d, idProduct=c315
+[    4.876044] usb 2-2: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[    4.876047] usb 2-2: Product: Logitech USB Keyboard
+[    4.876050] usb 2-2: Manufacturer: Logitech
+[    4.893796] input: Logitech Logitech USB Keyboard as /devices/pci0000:00/0000:00:1d.0/usb2/2-2/2-2:1.0/input/input7
+[    4.893866] hid-generic 0003:046D:C315.0002: input,hidraw1: USB HID v1.10 Keyboard [Logitech Logitech USB Keyboard] on usb-0000:00:1d.0-2/input0
+[   13.739050] Adding 3905532k swap on /dev/sda8.  Priority:-1 extents:1 across:3905532k FS
+[   13.791957] IPv6: ADDRCONF(NETDEV_UP): eth0: link is not ready
+[   13.791964] IPv6: ADDRCONF(NETDEV_UP): eth1: link is not ready
+[   13.855670] systemd-udevd[314]: starting version 204
+[   13.987684] shpchp: Standard Hot Plug PCI Controller Driver version: 0.4
+[   13.991484] lp: driver loaded but no devices found
+[   14.003148] ppdev: user-space parallel port driver
+[   14.009296] parport_pc 00:06: reported by Plug and Play ACPI
+[   14.009347] parport0: PC-style at 0x378 (0x778), irq 5, dma 3 [PCSPP,TRISTATE,COMPAT,ECP,DMA]
+[   14.029758] intel_rng: Firmware space is locked read-only. If you can't or
+[   14.029758] intel_rng: don't want to disable this in firmware setup, and if
+[   14.029758] intel_rng: you are certain that your system has a functional
+[   14.029758] intel_rng: RNG, try using the 'no_fwh_detect' option.
+[   14.058622] ACPI Warning: 0x00000480-0x000004af SystemIO conflicts with Region \_SB_.PCI0.SBRG.WGBS 1 (20131115/utaddress-251)
+[   14.058634] ACPI: If an ACPI driver is available for this device, you should use it instead of the native driver
+[   14.064039] leds_ss4200: no LED devices found
+[   14.104153] lp0: using parport0 (interrupt-driven).
+[   14.166211] type=1400 audit(1434945654.272:2): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/sbin/dhclient" pid=380 comm="apparmor_parser"
+[   14.166218] type=1400 audit(1434945654.272:3): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/NetworkManager/nm-dhcp-client.action" pid=380 comm="apparmor_parser"
+[   14.166222] type=1400 audit(1434945654.272:4): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/connman/scripts/dhclient-script" pid=380 comm="apparmor_parser"
+[   14.166678] type=1400 audit(1434945654.272:5): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="/usr/lib/NetworkManager/nm-dhcp-client.action" pid=380 comm="apparmor_parser"
+[   14.166683] type=1400 audit(1434945654.272:6): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="/usr/lib/connman/scripts/dhclient-script" pid=380 comm="apparmor_parser"
+[   14.166923] type=1400 audit(1434945654.272:7): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="/usr/lib/connman/scripts/dhclient-script" pid=380 comm="apparmor_parser"
+[   14.168823] type=1400 audit(1434945654.276:8): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="/sbin/dhclient" pid=381 comm="apparmor_parser"
+[   14.168831] type=1400 audit(1434945654.276:9): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="/usr/lib/NetworkManager/nm-dhcp-client.action" pid=381 comm="apparmor_parser"
+[   14.168836] type=1400 audit(1434945654.276:10): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="/usr/lib/connman/scripts/dhclient-script" pid=381 comm="apparmor_parser"
+[   14.169310] type=1400 audit(1434945654.276:11): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="/usr/lib/NetworkManager/nm-dhcp-client.action" pid=381 comm="apparmor_parser"
+[   14.206425] gpio_ich: GPIO from 206 to 255 on gpio_ich
+[   14.214533] snd_hda_intel 0000:00:1b.0: irq 45 for MSI/MSI-X
+[   14.231445] SKU: Nid=0x1d sku_cfg=0x4004c601
+[   14.231448] SKU: port_connectivity=0x1
+[   14.231449] SKU: enable_pcbeep=0x0
+[   14.231450] SKU: check_sum=0x00000004
+[   14.231452] SKU: customization=0x000000c6
+[   14.231453] SKU: external_amp=0x0
+[   14.231454] SKU: platform_type=0x0
+[   14.231455] SKU: swap=0x0
+[   14.231456] SKU: override=0x1
+[   14.231713] autoconfig: line_outs=1 (0x14/0x0/0x0/0x0/0x0) type:line
+[   14.231715]    speaker_outs=0 (0x0/0x0/0x0/0x0/0x0)
+[   14.231716]    hp_outs=1 (0x1b/0x0/0x0/0x0/0x0)
+[   14.231718]    mono: mono_out=0x0
+[   14.231719]    dig-out=0x1e/0x0
+[   14.231720]    inputs:
+[   14.231722]      Front Mic=0x19
+[   14.231723]      Rear Mic=0x18
+[   14.231724]      Line=0x1a
+[   14.231726] realtek: No valid SSID, checking pincfg 0x4004c601 for NID 0x1d
+[   14.231728] realtek: Enabling init ASM_ID=0xc601 CODEC_ID=10ec0662
+[   14.243768] input: HDA Intel Front Headphone as /devices/pci0000:00/0000:00:1b.0/sound/card0/input12
+[   14.247889] input: HDA Intel Line Out as /devices/pci0000:00/0000:00:1b.0/sound/card0/input11
+[   14.248036] input: HDA Intel Line as /devices/pci0000:00/0000:00:1b.0/sound/card0/input10
+[   14.248148] input: HDA Intel Rear Mic as /devices/pci0000:00/0000:00:1b.0/sound/card0/input9
+[   14.248258] input: HDA Intel Front Mic as /devices/pci0000:00/0000:00:1b.0/sound/card0/input8
+[   14.651775] init: Failed to obtain startpar-bridge instance: Unknown parameter: INSTANCE
+[   15.741625] EXT4-fs (sda1): re-mounted. Opts: errors=remount-ro
+[   16.507088] EXT4-fs (sda5): mounted filesystem with ordered data mode. Opts: (null)
+[   16.863970] EXT4-fs (sda6): mounted filesystem with ordered data mode. Opts: (null)
+[   17.842923] EXT4-fs (sda7): mounted filesystem with ordered data mode. Opts: (null)
+[   17.883002] FS-Cache: Loaded
+[   17.897511] RPC: Registered named UNIX socket transport module.
+[   17.897514] RPC: Registered udp transport module.
+[   17.897515] RPC: Registered tcp transport module.
+[   17.897517] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[   17.917690] FS-Cache: Netfs 'nfs' registered for caching
+[   17.944352] Installing knfsd (copyright (C) 1996 okir@monad.swb.de).
+[   17.986556] init: failsafe main process (708) killed by TERM signal
+[   18.178376] Bluetooth: Core ver 2.17
+[   18.178398] NET: Registered protocol family 31
+[   18.178399] Bluetooth: HCI device and connection manager initialized
+[   18.178591] Bluetooth: HCI socket layer initialized
+[   18.178594] Bluetooth: L2CAP socket layer initialized
+[   18.178599] Bluetooth: SCO socket layer initialized
+[   18.186669] Bluetooth: BNEP (Ethernet Emulation) ver 1.3
+[   18.186673] Bluetooth: BNEP filters: protocol multicast
+[   18.186681] Bluetooth: BNEP socket layer initialized
+[   18.197498] Bluetooth: RFCOMM TTY layer initialized
+[   18.197513] Bluetooth: RFCOMM socket layer initialized
+[   18.197523] Bluetooth: RFCOMM ver 1.11
+[   18.651058] init: cups main process (845) killed by HUP signal
+[   18.651070] init: cups main process ended, respawning
+[   18.841521] init: Failed to spawn hybrid-gfx main process: unable to execute: No such file or directory
+[   18.954923] init: kdm main process (961) killed by TERM signal
+[   18.997157] init: gdm main process (1015) killed by TERM signal
+[   20.846656] NFSD: Using /var/lib/nfs/v4recovery as the NFSv4 state recovery directory
+[   20.860643] NFSD: starting 90-second grace period (net c19981c0)
+[   21.101292] r8169 0000:03:00.0 eth0: link down
+[   21.101307] r8169 0000:03:00.0 eth0: link down
+[   21.101335] IPv6: ADDRCONF(NETDEV_UP): eth0: link is not ready
+[   21.101692] IPv6: ADDRCONF(NETDEV_UP): eth0: link is not ready
+[   21.103397] 8139too 0000:04:04.0 eth1: link down
+[   21.103449] IPv6: ADDRCONF(NETDEV_UP): eth1: link is not ready
+[   21.103761] IPv6: ADDRCONF(NETDEV_UP): eth1: link is not ready
+[   21.942795] init: samba-ad-dc main process (1170) terminated with status 1
+[   22.681029] init: plymouth-upstart-bridge main process ended, respawning
+[   22.691033] init: plymouth-upstart-bridge main process (1378) terminated with status 1
+[   22.691047] init: plymouth-upstart-bridge main process ended, respawning
+[   23.024249] r8169 0000:03:00.0 eth0: link up
+[   23.024260] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+[   48.269819] audit_printk_skb: 198 callbacks suppressed
+[   48.269823] type=1400 audit(1434945684.429:78): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="/usr/lib/cups/backend/cups-pdf" pid=2167 comm="apparmor_parser"
+[   48.269830] type=1400 audit(1434945684.429:79): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="/usr/sbin/cupsd" pid=2167 comm="apparmor_parser"
+[   48.270286] type=1400 audit(1434945684.429:80): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="/usr/sbin/cupsd" pid=2167 comm="apparmor_parser"
+[   93.587971] systemd-hostnamed[2663]: Warning: nss-myhostname is not installed. Changing the local hostname might make it unresolveable. Please install nss-myhostname!
+[ 2002.569654] type=1400 audit(1434947638.729:81): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="/usr/lib/cups/backend/cups-pdf" pid=3278 comm="apparmor_parser"
+[ 2002.569664] type=1400 audit(1434947638.729:82): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="/usr/sbin/cupsd" pid=3278 comm="apparmor_parser"
+[ 2002.570278] type=1400 audit(1434947638.729:83): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="/usr/sbin/cupsd" pid=3278 comm="apparmor_parser"
+[ 8004.108245] perf samples too long (2503 > 2500), lowering kernel.perf_event_max_sample_rate to 50000
+[24457.939749] type=1400 audit(1434970094.097:84): apparmor="DENIED" operation="open" profile="/usr/bin/evince" name="/proc/4225/cmdline" pid=4225 comm="evince" requested_mask="r" denied_mask="r" fsuid=1000 ouid=1000
+[24457.941276] type=1400 audit(1434970094.101:85): apparmor="DENIED" operation="exec" profile="/usr/bin/evince" name="/usr/bin/kde4-config" pid=4227 comm="evince" requested_mask="x" denied_mask="x" fsuid=1000 ouid=0
+[24457.942453] type=1400 audit(1434970094.101:86): apparmor="DENIED" operation="exec" profile="/usr/bin/evince" name="/usr/bin/kde4-config" pid=4228 comm="evince" requested_mask="x" denied_mask="x" fsuid=1000 ouid=0
+[24585.622691] type=1400 audit(1434970221.781:87): apparmor="DENIED" operation="open" profile="/usr/bin/evince" name="/proc/4308/cmdline" pid=4308 comm="evince" requested_mask="r" denied_mask="r" fsuid=1000 ouid=1000
+[24585.623708] type=1400 audit(1434970221.781:88): apparmor="DENIED" operation="exec" profile="/usr/bin/evince" name="/usr/bin/kde4-config" pid=4310 comm="evince" requested_mask="x" denied_mask="x" fsuid=1000 ouid=0
+[24585.624939] type=1400 audit(1434970221.785:89): apparmor="DENIED" operation="exec" profile="/usr/bin/evince" name="/usr/bin/kde4-config" pid=4311 comm="evince" requested_mask="x" denied_mask="x" fsuid=1000 ouid=0
+[24602.109172] type=1400 audit(1434970238.269:90): apparmor="DENIED" operation="open" profile="/usr/bin/evince" name="/proc/4332/cmdline" pid=4332 comm="evince" requested_mask="r" denied_mask="r" fsuid=1000 ouid=1000
+[24602.110198] type=1400 audit(1434970238.269:91): apparmor="DENIED" operation="exec" profile="/usr/bin/evince" name="/usr/bin/kde4-config" pid=4334 comm="evince" requested_mask="x" denied_mask="x" fsuid=1000 ouid=0
+[24602.111175] type=1400 audit(1434970238.269:92): apparmor="DENIED" operation="exec" profile="/usr/bin/evince" name="/usr/bin/kde4-config" pid=4335 comm="evince" requested_mask="x" denied_mask="x" fsuid=1000 ouid=0
+[24621.914305] type=1400 audit(1434970258.073:93): apparmor="DENIED" operation="open" profile="/usr/bin/evince" name="/proc/4356/cmdline" pid=4356 comm="evince" requested_mask="r" denied_mask="r" fsuid=1000 ouid=1000
+[24621.915324] type=1400 audit(1434970258.073:94): apparmor="DENIED" operation="exec" profile="/usr/bin/evince" name="/usr/bin/kde4-config" pid=4358 comm="evince" requested_mask="x" denied_mask="x" fsuid=1000 ouid=0
+[24621.916457] type=1400 audit(1434970258.077:95): apparmor="DENIED" operation="exec" profile="/usr/bin/evince" name="/usr/bin/kde4-config" pid=4359 comm="evince" requested_mask="x" denied_mask="x" fsuid=1000 ouid=0
+[24656.809338] type=1400 audit(1434970292.969:96): apparmor="DENIED" operation="open" profile="/usr/bin/evince" name="/proc/4389/cmdline" pid=4389 comm="evince" requested_mask="r" denied_mask="r" fsuid=1000 ouid=1000
+[24656.810363] type=1400 audit(1434970292.969:97): apparmor="DENIED" operation="exec" profile="/usr/bin/evince" name="/usr/bin/kde4-config" pid=4391 comm="evince" requested_mask="x" denied_mask="x" fsuid=1000 ouid=0
+[24656.811433] type=1400 audit(1434970292.969:98): apparmor="DENIED" operation="exec" profile="/usr/bin/evince" name="/usr/bin/kde4-config" pid=4392 comm="evince" requested_mask="x" denied_mask="x" fsuid=1000 ouid=0
+[24656.941872] type=1400 audit(1434970293.101:99): apparmor="DENIED" operation="open" profile="/usr/bin/evince" name="/mnt/Data1/SVN/Documents/Training/In-House/Embedded/ECEP/Modules/LinuxInternals/References/kernel_debugging_using_gdb" pid=4399 comm="EvJobScheduler" requested_mask="r" denied_mask="r" fsuid=1000 ouid=1000
+[24656.942049] type=1400 audit(1434970293.101:100): apparmor="DENIED" operation="open" profile="/usr/bin/evince" name="/mnt/Data1/SVN/Documents/Training/In-House/Embedded/ECEP/Modules/LinuxInternals/References/kernel_debugging_using_gdb" pid=4399 comm="EvJobScheduler" requested_mask="r" denied_mask="r" fsuid=1000 ouid=1000
+[24660.059764] type=1400 audit(1434970296.217:101): apparmor="DENIED" operation="open" profile="/usr/bin/evince" name="/proc/4405/cmdline" pid=4405 comm="evince" requested_mask="r" denied_mask="r" fsuid=1000 ouid=1000
+[24660.060836] type=1400 audit(1434970296.221:102): apparmor="DENIED" operation="exec" profile="/usr/bin/evince" name="/usr/bin/kde4-config" pid=4407 comm="evince" requested_mask="x" denied_mask="x" fsuid=1000 ouid=0
+[24660.061902] type=1400 audit(1434970296.221:103): apparmor="DENIED" operation="exec" profile="/usr/bin/evince" name="/usr/bin/kde4-config" pid=4408 comm="evince" requested_mask="x" denied_mask="x" fsuid=1000 ouid=0
+[24751.669716] type=1400 audit(1434970387.829:104): apparmor="DENIED" operation="open" profile="/usr/bin/evince" name="/proc/4426/cmdline" pid=4426 comm="evince" requested_mask="r" denied_mask="r" fsuid=1000 ouid=1000
+[24751.670731] type=1400 audit(1434970387.829:105): apparmor="DENIED" operation="exec" profile="/usr/bin/evince" name="/usr/bin/kde4-config" pid=4428 comm="evince" requested_mask="x" denied_mask="x" fsuid=1000 ouid=0
+[24751.671785] type=1400 audit(1434970387.829:106): apparmor="DENIED" operation="exec" profile="/usr/bin/evince" name="/usr/bin/kde4-config" pid=4429 comm="evince" requested_mask="x" denied_mask="x" fsuid=1000 ouid=0
+[25058.124624] type=1400 audit(1434970694.285:107): apparmor="DENIED" operation="open" profile="/usr/bin/evince" name="/proc/4466/cmdline" pid=4466 comm="evince" requested_mask="r" denied_mask="r" fsuid=1000 ouid=1000
+[25058.125746] type=1400 audit(1434970694.285:108): apparmor="DENIED" operation="exec" profile="/usr/bin/evince" name="/usr/bin/kde4-config" pid=4468 comm="evince" requested_mask="x" denied_mask="x" fsuid=1000 ouid=0
+[25058.126945] type=1400 audit(1434970694.285:109): apparmor="DENIED" operation="exec" profile="/usr/bin/evince" name="/usr/bin/kde4-config" pid=4469 comm="evince" requested_mask="x" denied_mask="x" fsuid=1000 ouid=0
+[25130.197513] type=1400 audit(1434970766.357:110): apparmor="DENIED" operation="open" profile="/usr/bin/evince" name="/proc/4485/cmdline" pid=4485 comm="evince" requested_mask="r" denied_mask="r" fsuid=1000 ouid=1000
+[25130.198617] type=1400 audit(1434970766.357:111): apparmor="DENIED" operation="exec" profile="/usr/bin/evince" name="/usr/bin/kde4-config" pid=4487 comm="evince" requested_mask="x" denied_mask="x" fsuid=1000 ouid=0
+[25130.199831] type=1400 audit(1434970766.357:112): apparmor="DENIED" operation="exec" profile="/usr/bin/evince" name="/usr/bin/kde4-config" pid=4488 comm="evince" requested_mask="x" denied_mask="x" fsuid=1000 ouid=0
+[25523.214463] type=1400 audit(1434971159.373:113): apparmor="DENIED" operation="open" profile="/usr/bin/evince" name="/proc/4517/cmdline" pid=4517 comm="evince" requested_mask="r" denied_mask="r" fsuid=1000 ouid=1000
+[25523.215422] type=1400 audit(1434971159.373:114): apparmor="DENIED" operation="exec" profile="/usr/bin/evince" name="/usr/bin/kde4-config" pid=4519 comm="evince" requested_mask="x" denied_mask="x" fsuid=1000 ouid=0
+[25523.216412] type=1400 audit(1434971159.377:115): apparmor="DENIED" operation="exec" profile="/usr/bin/evince" name="/usr/bin/kde4-config" pid=4520 comm="evince" requested_mask="x" denied_mask="x" fsuid=1000 ouid=0
+[25864.221786] type=1400 audit(1434971500.381:116): apparmor="DENIED" operation="open" profile="/usr/bin/evince" name="/proc/4561/cmdline" pid=4561 comm="evince" requested_mask="r" denied_mask="r" fsuid=1000 ouid=1000
+[25864.222764] type=1400 audit(1434971500.381:117): apparmor="DENIED" operation="exec" profile="/usr/bin/evince" name="/usr/bin/kde4-config" pid=4563 comm="evince" requested_mask="x" denied_mask="x" fsuid=1000 ouid=0
+[25864.223752] type=1400 audit(1434971500.381:118): apparmor="DENIED" operation="exec" profile="/usr/bin/evince" name="/usr/bin/kde4-config" pid=4564 comm="evince" requested_mask="x" denied_mask="x" fsuid=1000 ouid=0
+[28343.843175] type=1400 audit(1434973980.001:119): apparmor="DENIED" operation="open" profile="/usr/bin/evince" name="/proc/4812/cmdline" pid=4812 comm="evince" requested_mask="r" denied_mask="r" fsuid=1000 ouid=1000
+[28343.844501] type=1400 audit(1434973980.005:120): apparmor="DENIED" operation="exec" profile="/usr/bin/evince" name="/usr/bin/kde4-config" pid=4814 comm="evince" requested_mask="x" denied_mask="x" fsuid=1000 ouid=0
+[28343.845831] type=1400 audit(1434973980.005:121): apparmor="DENIED" operation="exec" profile="/usr/bin/evince" name="/usr/bin/kde4-config" pid=4815 comm="evince" requested_mask="x" denied_mask="x" fsuid=1000 ouid=0
+[28349.215053] type=1400 audit(1434973985.373:122): apparmor="DENIED" operation="open" profile="/usr/bin/evince" name="/proc/4830/cmdline" pid=4830 comm="evince" requested_mask="r" denied_mask="r" fsuid=1000 ouid=1000
+[28349.216305] type=1400 audit(1434973985.377:123): apparmor="DENIED" operation="exec" profile="/usr/bin/evince" name="/usr/bin/kde4-config" pid=4832 comm="evince" requested_mask="x" denied_mask="x" fsuid=1000 ouid=0
+[28349.217554] type=1400 audit(1434973985.377:124): apparmor="DENIED" operation="exec" profile="/usr/bin/evince" name="/usr/bin/kde4-config" pid=4833 comm="evince" requested_mask="x" denied_mask="x" fsuid=1000 ouid=0
+[28353.631935] type=1400 audit(1434973989.789:125): apparmor="DENIED" operation="open" profile="/usr/bin/evince" name="/proc/4845/cmdline" pid=4845 comm="evince" requested_mask="r" denied_mask="r" fsuid=1000 ouid=1000
+[28353.632962] type=1400 audit(1434973989.793:126): apparmor="DENIED" operation="exec" profile="/usr/bin/evince" name="/usr/bin/kde4-config" pid=4847 comm="evince" requested_mask="x" denied_mask="x" fsuid=1000 ouid=0
+[28353.634629] type=1400 audit(1434973989.793:127): apparmor="DENIED" operation="exec" profile="/usr/bin/evince" name="/usr/bin/kde4-config" pid=4848 comm="evince" requested_mask="x" denied_mask="x" fsuid=1000 ouid=0
+[80780.160633] type=1400 audit(1435026416.319:128): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="/usr/lib/cups/backend/cups-pdf" pid=8331 comm="apparmor_parser"
+[80780.160642] type=1400 audit(1435026416.319:129): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="/usr/sbin/cupsd" pid=8331 comm="apparmor_parser"
+[80780.161101] type=1400 audit(1435026416.319:130): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="/usr/sbin/cupsd" pid=8331 comm="apparmor_parser"
+[103079.180023] usb 1-6: new high-speed USB device number 4 using ehci-pci
+[103079.314492] usb 1-6: New USB device found, idVendor=058f, idProduct=6387
+[103079.314498] usb 1-6: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[103079.314501] usb 1-6: Product: Mass Storage Device
+[103079.314504] usb 1-6: Manufacturer: JetFlash
+[103079.314506] usb 1-6: SerialNumber: JAX2ZRC2
+[103079.407479] usb-storage 1-6:1.0: USB Mass Storage device detected
+[103079.407574] scsi2 : usb-storage 1-6:1.0
+[103079.407678] usbcore: registered new interface driver usb-storage
+[103080.404769] scsi 2:0:0:0: Direct-Access     JetFlash Transcend 2GB    8.07 PQ: 0 ANSI: 2
+[103080.405045] sd 2:0:0:0: Attached scsi generic sg1 type 0
+[103080.411530] sd 2:0:0:0: [sdb] 3944448 512-byte logical blocks: (2.01 GB/1.88 GiB)
+[103080.412292] sd 2:0:0:0: [sdb] Write Protect is off
+[103080.412296] sd 2:0:0:0: [sdb] Mode Sense: 03 00 00 00
+[103080.412878] sd 2:0:0:0: [sdb] No Caching mode page found
+[103080.412882] sd 2:0:0:0: [sdb] Assuming drive cache: write through
+[103080.416125] sd 2:0:0:0: [sdb] No Caching mode page found
+[103080.416129] sd 2:0:0:0: [sdb] Assuming drive cache: write through
+[103080.619911]  sdb: sdb1 sdb2
+[103080.622497] sd 2:0:0:0: [sdb] No Caching mode page found
+[103080.622502] sd 2:0:0:0: [sdb] Assuming drive cache: write through
+[103080.622506] sd 2:0:0:0: [sdb] Attached SCSI removable disk
+[103087.937407] EXT4-fs (sdb2): mounted filesystem with ordered data mode. Opts: (null)
+[103411.526286] type=1400 audit(1435049047.683:131): apparmor="DENIED" operation="open" profile="/usr/bin/evince" name="/proc/9574/cmdline" pid=9574 comm="evince" requested_mask="r" denied_mask="r" fsuid=1000 ouid=1000
+[103411.527507] type=1400 audit(1435049047.683:132): apparmor="DENIED" operation="exec" profile="/usr/bin/evince" name="/usr/bin/kde4-config" pid=9576 comm="evince" requested_mask="x" denied_mask="x" fsuid=1000 ouid=0
+[103411.528990] type=1400 audit(1435049047.687:133): apparmor="DENIED" operation="exec" profile="/usr/bin/evince" name="/usr/bin/kde4-config" pid=9577 comm="evince" requested_mask="x" denied_mask="x" fsuid=1000 ouid=0
+[103536.362138] soffice.bin[9671]: segfault at 8 ip aa16658c sp bf86c470 error 4 in libsdlo.so[a9d13000+5a1000]
+[106229.197123] type=1400 audit(1435051865.355:134): apparmor="DENIED" operation="open" profile="/usr/bin/evince" name="/proc/10105/cmdline" pid=10105 comm="evince" requested_mask="r" denied_mask="r" fsuid=1000 ouid=1000
+[106229.198246] type=1400 audit(1435051865.355:135): apparmor="DENIED" operation="exec" profile="/usr/bin/evince" name="/usr/bin/kde4-config" pid=10107 comm="evince" requested_mask="x" denied_mask="x" fsuid=1000 ouid=0
+[106229.199341] type=1400 audit(1435051865.355:136): apparmor="DENIED" operation="exec" profile="/usr/bin/evince" name="/usr/bin/kde4-config" pid=10108 comm="evince" requested_mask="x" denied_mask="x" fsuid=1000 ouid=0
+[166082.235255] type=1400 audit(1435111718.393:137): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="/usr/lib/cups/backend/cups-pdf" pid=15588 comm="apparmor_parser"
+[166082.235265] type=1400 audit(1435111718.393:138): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="/usr/sbin/cupsd" pid=15588 comm="apparmor_parser"
+[166082.235723] type=1400 audit(1435111718.393:139): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="/usr/sbin/cupsd" pid=15588 comm="apparmor_parser"
+[196372.325579] type=1400 audit(1435142008.486:140): apparmor="DENIED" operation="open" profile="/usr/bin/evince" name="/proc/18133/cmdline" pid=18133 comm="evince" requested_mask="r" denied_mask="r" fsuid=1000 ouid=1000
+[196372.327130] type=1400 audit(1435142008.486:141): apparmor="DENIED" operation="exec" profile="/usr/bin/evince" name="/usr/bin/kde4-config" pid=18135 comm="evince" requested_mask="x" denied_mask="x" fsuid=1000 ouid=0
+[196372.328268] type=1400 audit(1435142008.490:142): apparmor="DENIED" operation="exec" profile="/usr/bin/evince" name="/usr/bin/kde4-config" pid=18136 comm="evince" requested_mask="x" denied_mask="x" fsuid=1000 ouid=0
+[196420.097015] usb 1-6: USB disconnect, device number 4
+[196431.296026] usb 1-4: new high-speed USB device number 5 using ehci-pci
+[196431.430442] usb 1-4: New USB device found, idVendor=058f, idProduct=6387
+[196431.430447] usb 1-4: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[196431.430450] usb 1-4: Product: Mass Storage Device
+[196431.430453] usb 1-4: Manufacturer: JetFlash
+[196431.430455] usb 1-4: SerialNumber: JAX2ZRC2
+[196431.430762] usb-storage 1-4:1.0: USB Mass Storage device detected
+[196431.430836] scsi3 : usb-storage 1-4:1.0
+[196432.428845] scsi 3:0:0:0: Direct-Access     JetFlash Transcend 2GB    8.07 PQ: 0 ANSI: 2
+[196432.429155] sd 3:0:0:0: Attached scsi generic sg1 type 0
+[196432.431743] sd 3:0:0:0: [sdb] 3944448 512-byte logical blocks: (2.01 GB/1.88 GiB)
+[196432.434350] sd 3:0:0:0: [sdb] Write Protect is off
+[196432.434356] sd 3:0:0:0: [sdb] Mode Sense: 03 00 00 00
+[196432.434950] sd 3:0:0:0: [sdb] No Caching mode page found
+[196432.434954] sd 3:0:0:0: [sdb] Assuming drive cache: write through
+[196432.437826] sd 3:0:0:0: [sdb] No Caching mode page found
+[196432.437830] sd 3:0:0:0: [sdb] Assuming drive cache: write through
+[196432.521355]  sdb: sdb1 sdb2
+[196432.524202] sd 3:0:0:0: [sdb] No Caching mode page found
+[196432.524207] sd 3:0:0:0: [sdb] Assuming drive cache: write through
+[196432.524211] sd 3:0:0:0: [sdb] Attached SCSI removable disk
+[196439.128863] EXT4-fs (sdb2): mounted filesystem with ordered data mode. Opts: (null)
+[196449.637562] type=1400 audit(1435142085.798:143): apparmor="DENIED" operation="open" profile="/usr/bin/evince" name="/proc/18230/cmdline" pid=18230 comm="evince" requested_mask="r" denied_mask="r" fsuid=1000 ouid=1000
+[196449.638753] type=1400 audit(1435142085.798:144): apparmor="DENIED" operation="exec" profile="/usr/bin/evince" name="/usr/bin/kde4-config" pid=18232 comm="evince" requested_mask="x" denied_mask="x" fsuid=1000 ouid=0
+[196449.639958] type=1400 audit(1435142085.798:145): apparmor="DENIED" operation="exec" profile="/usr/bin/evince" name="/usr/bin/kde4-config" pid=18233 comm="evince" requested_mask="x" denied_mask="x" fsuid=1000 ouid=0
+[196776.365614] usb 1-4: USB disconnect, device number 5
+[197222.000040] usb 1-4: new high-speed USB device number 6 using ehci-pci
+[197222.134469] usb 1-4: New USB device found, idVendor=058f, idProduct=6387
+[197222.134473] usb 1-4: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[197222.134476] usb 1-4: Product: Mass Storage Device
+[197222.134479] usb 1-4: Manufacturer: JetFlash
+[197222.134481] usb 1-4: SerialNumber: JAX2ZRC2
+[197222.134756] usb-storage 1-4:1.0: USB Mass Storage device detected
+[197222.134827] scsi4 : usb-storage 1-4:1.0
+[197223.132742] scsi 4:0:0:0: Direct-Access     JetFlash Transcend 2GB    8.07 PQ: 0 ANSI: 2
+[197223.133059] sd 4:0:0:0: Attached scsi generic sg1 type 0
+[197223.135857] sd 4:0:0:0: [sdb] 3944448 512-byte logical blocks: (2.01 GB/1.88 GiB)
+[197223.136478] sd 4:0:0:0: [sdb] Write Protect is off
+[197223.136482] sd 4:0:0:0: [sdb] Mode Sense: 03 00 00 00
+[197223.137101] sd 4:0:0:0: [sdb] No Caching mode page found
+[197223.137105] sd 4:0:0:0: [sdb] Assuming drive cache: write through
+[197223.141483] sd 4:0:0:0: [sdb] No Caching mode page found
+[197223.141488] sd 4:0:0:0: [sdb] Assuming drive cache: write through
+[197223.764637]  sdb: sdb1 sdb2
+[197223.767480] sd 4:0:0:0: [sdb] No Caching mode page found
+[197223.767485] sd 4:0:0:0: [sdb] Assuming drive cache: write through
+[197223.767489] sd 4:0:0:0: [sdb] Attached SCSI removable disk
+[197230.115766] EXT4-fs (sdb2): mounted filesystem with ordered data mode. Opts: (null)
+[197301.216421] usb 1-4: USB disconnect, device number 6
+[253895.617058] type=1400 audit(1435199531.775:146): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="/usr/lib/cups/backend/cups-pdf" pid=20483 comm="apparmor_parser"
+[253895.617069] type=1400 audit(1435199531.775:147): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="/usr/sbin/cupsd" pid=20483 comm="apparmor_parser"
+[253895.617673] type=1400 audit(1435199531.775:148): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="/usr/sbin/cupsd" pid=20483 comm="apparmor_parser"
+[260019.776275] type=1400 audit(1435205655.935:149): apparmor="DENIED" operation="open" profile="/usr/bin/evince" name="/proc/20899/cmdline" pid=20899 comm="evince" requested_mask="r" denied_mask="r" fsuid=1000 ouid=1000
+[260019.777332] type=1400 audit(1435205655.935:150): apparmor="DENIED" operation="exec" profile="/usr/bin/evince" name="/usr/bin/kde4-config" pid=20901 comm="evince" requested_mask="x" denied_mask="x" fsuid=1000 ouid=0
+[260019.778535] type=1400 audit(1435205655.935:151): apparmor="DENIED" operation="exec" profile="/usr/bin/evince" name="/usr/bin/kde4-config" pid=20902 comm="evince" requested_mask="x" denied_mask="x" fsuid=1000 ouid=0
+[263675.500054] usb 1-4: new high-speed USB device number 7 using ehci-pci
+[263675.634442] usb 1-4: New USB device found, idVendor=058f, idProduct=6387
+[263675.634446] usb 1-4: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[263675.634450] usb 1-4: Product: Mass Storage Device
+[263675.634452] usb 1-4: Manufacturer: JetFlash
+[263675.634455] usb 1-4: SerialNumber: JAX2ZRC2
+[263675.634731] usb-storage 1-4:1.0: USB Mass Storage device detected
+[263675.634808] scsi5 : usb-storage 1-4:1.0
+[263676.632844] scsi 5:0:0:0: Direct-Access     JetFlash Transcend 2GB    8.07 PQ: 0 ANSI: 2
+[263676.633180] sd 5:0:0:0: Attached scsi generic sg1 type 0
+[263676.639061] sd 5:0:0:0: [sdb] 3944448 512-byte logical blocks: (2.01 GB/1.88 GiB)
+[263676.640213] sd 5:0:0:0: [sdb] Write Protect is off
+[263676.640218] sd 5:0:0:0: [sdb] Mode Sense: 03 00 00 00
+[263676.640826] sd 5:0:0:0: [sdb] No Caching mode page found
+[263676.640830] sd 5:0:0:0: [sdb] Assuming drive cache: write through
+[263676.643695] sd 5:0:0:0: [sdb] No Caching mode page found
+[263676.643699] sd 5:0:0:0: [sdb] Assuming drive cache: write through
+[263677.260235]  sdb: sdb1 sdb2
+[263677.263071] sd 5:0:0:0: [sdb] No Caching mode page found
+[263677.263076] sd 5:0:0:0: [sdb] Assuming drive cache: write through
+[263677.263080] sd 5:0:0:0: [sdb] Attached SCSI removable disk
+[263681.599236] EXT4-fs (sdb2): mounted filesystem with ordered data mode. Opts: (null)
+[270220.096452] type=1400 audit(1435215856.256:152): apparmor="DENIED" operation="open" profile="/usr/bin/evince" name="/proc/23187/cmdline" pid=23187 comm="evince" requested_mask="r" denied_mask="r" fsuid=1000 ouid=1000
+[270220.097603] type=1400 audit(1435215856.256:153): apparmor="DENIED" operation="exec" profile="/usr/bin/evince" name="/usr/bin/kde4-config" pid=23189 comm="evince" requested_mask="x" denied_mask="x" fsuid=1000 ouid=0
+[270220.099102] type=1400 audit(1435215856.256:154): apparmor="DENIED" operation="exec" profile="/usr/bin/evince" name="/usr/bin/kde4-config" pid=23190 comm="evince" requested_mask="x" denied_mask="x" fsuid=1000 ouid=0
+[274645.289122] usb 1-4: USB disconnect, device number 7
+[339975.282316] type=1400 audit(1435285611.441:155): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="/usr/lib/cups/backend/cups-pdf" pid=27716 comm="apparmor_parser"
+[339975.282325] type=1400 audit(1435285611.441:156): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="/usr/sbin/cupsd" pid=27716 comm="apparmor_parser"
+[339975.282785] type=1400 audit(1435285611.441:157): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="/usr/sbin/cupsd" pid=27716 comm="apparmor_parser"
+[346267.228035] usb 1-4: new high-speed USB device number 8 using ehci-pci
+[346267.362441] usb 1-4: New USB device found, idVendor=058f, idProduct=6387
+[346267.362446] usb 1-4: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[346267.362449] usb 1-4: Product: Mass Storage Device
+[346267.362451] usb 1-4: Manufacturer: JetFlash
+[346267.362454] usb 1-4: SerialNumber: JAX2ZRC2
+[346267.362732] usb-storage 1-4:1.0: USB Mass Storage device detected
+[346267.362808] scsi6 : usb-storage 1-4:1.0
+[346268.360842] scsi 6:0:0:0: Direct-Access     JetFlash Transcend 2GB    8.07 PQ: 0 ANSI: 2
+[346268.361145] sd 6:0:0:0: Attached scsi generic sg1 type 0
+[346268.363202] sd 6:0:0:0: [sdb] 3944448 512-byte logical blocks: (2.01 GB/1.88 GiB)
+[346268.365961] sd 6:0:0:0: [sdb] Write Protect is off
+[346268.365967] sd 6:0:0:0: [sdb] Mode Sense: 03 00 00 00
+[346268.368904] sd 6:0:0:0: [sdb] No Caching mode page found
+[346268.368909] sd 6:0:0:0: [sdb] Assuming drive cache: write through
+[346268.371821] sd 6:0:0:0: [sdb] No Caching mode page found
+[346268.371826] sd 6:0:0:0: [sdb] Assuming drive cache: write through
+[346268.410607]  sdb: sdb1 sdb2
+[346268.413196] sd 6:0:0:0: [sdb] No Caching mode page found
+[346268.413200] sd 6:0:0:0: [sdb] Assuming drive cache: write through
+[346268.413204] sd 6:0:0:0: [sdb] Attached SCSI removable disk
+[346272.723125] EXT4-fs (sdb2): mounted filesystem with ordered data mode. Opts: (null)
+[346351.887672] type=1400 audit(1435291988.046:158): apparmor="DENIED" operation="open" profile="/usr/bin/evince" name="/proc/28295/cmdline" pid=28295 comm="evince" requested_mask="r" denied_mask="r" fsuid=1000 ouid=1000
+[346351.924250] type=1400 audit(1435291988.086:159): apparmor="DENIED" operation="exec" profile="/usr/bin/evince" name="/usr/bin/kde4-config" pid=28297 comm="evince" requested_mask="x" denied_mask="x" fsuid=1000 ouid=0
+[346351.925691] type=1400 audit(1435291988.086:160): apparmor="DENIED" operation="exec" profile="/usr/bin/evince" name="/usr/bin/kde4-config" pid=28298 comm="evince" requested_mask="x" denied_mask="x" fsuid=1000 ouid=0
+[361029.515034] usb 1-4: USB disconnect, device number 8
+[373641.444024] usb 1-4: new high-speed USB device number 9 using ehci-pci
+[373641.578430] usb 1-4: New USB device found, idVendor=058f, idProduct=6387
+[373641.578434] usb 1-4: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[373641.578437] usb 1-4: Product: Mass Storage Device
+[373641.578440] usb 1-4: Manufacturer: JetFlash
+[373641.578442] usb 1-4: SerialNumber: JAX2ZRC2
+[373641.578720] usb-storage 1-4:1.0: USB Mass Storage device detected
+[373641.578791] scsi7 : usb-storage 1-4:1.0
+[373642.576839] scsi 7:0:0:0: Direct-Access     JetFlash Transcend 2GB    8.07 PQ: 0 ANSI: 2
+[373642.577191] sd 7:0:0:0: Attached scsi generic sg1 type 0
+[373642.581326] sd 7:0:0:0: [sdb] 3944448 512-byte logical blocks: (2.01 GB/1.88 GiB)
+[373642.583364] sd 7:0:0:0: [sdb] Write Protect is off
+[373642.583370] sd 7:0:0:0: [sdb] Mode Sense: 03 00 00 00
+[373642.583948] sd 7:0:0:0: [sdb] No Caching mode page found
+[373642.583953] sd 7:0:0:0: [sdb] Assuming drive cache: write through
+[373642.587941] sd 7:0:0:0: [sdb] No Caching mode page found
+[373642.587946] sd 7:0:0:0: [sdb] Assuming drive cache: write through
+[373642.623339]  sdb: sdb1 sdb2
+[373642.626190] sd 7:0:0:0: [sdb] No Caching mode page found
+[373642.626194] sd 7:0:0:0: [sdb] Assuming drive cache: write through
+[373642.626198] sd 7:0:0:0: [sdb] Attached SCSI removable disk
+[373656.232973] EXT4-fs (sdb2): mounted filesystem with ordered data mode. Opts: (null)
+[373704.325632] usb 1-4: USB disconnect, device number 9
+[373714.216025] usb 1-4: new high-speed USB device number 10 using ehci-pci
+[373714.351146] usb 1-4: New USB device found, idVendor=154b, idProduct=0003
+[373714.351151] usb 1-4: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[373714.351154] usb 1-4: Product: USB 2.0 FD
+[373714.351157] usb 1-4: Manufacturer: PNY Technologies
+[373714.351159] usb 1-4: SerialNumber: 0000000011416
+[373714.351444] usb-storage 1-4:1.0: USB Mass Storage device detected
+[373714.351525] scsi8 : usb-storage 1-4:1.0
+[373715.349173] scsi 8:0:0:0: Direct-Access     PNY      USB 2.0 FD       0512 PQ: 0 ANSI: 0 CCS
+[373715.349482] sd 8:0:0:0: Attached scsi generic sg1 type 0
+[373715.350906] sd 8:0:0:0: [sdb] 990208 512-byte logical blocks: (506 MB/483 MiB)
+[373715.351784] sd 8:0:0:0: [sdb] Write Protect is off
+[373715.351789] sd 8:0:0:0: [sdb] Mode Sense: 43 00 00 00
+[373715.352891] sd 8:0:0:0: [sdb] No Caching mode page found
+[373715.352896] sd 8:0:0:0: [sdb] Assuming drive cache: write through
+[373715.357534] sd 8:0:0:0: [sdb] No Caching mode page found
+[373715.357539] sd 8:0:0:0: [sdb] Assuming drive cache: write through
+[373715.431317]  sdb: sdb1
+[373715.434653] sd 8:0:0:0: [sdb] No Caching mode page found
+[373715.434658] sd 8:0:0:0: [sdb] Assuming drive cache: write through
+[373715.434662] sd 8:0:0:0: [sdb] Attached SCSI removable disk
+[373717.142661] FAT-fs (sdb1): Volume was not properly unmounted. Some data may be corrupt. Please run fsck.
+[373776.527424] type=1400 audit(1435319412.682:161): apparmor="DENIED" operation="open" profile="/usr/bin/evince" name="/proc/30735/cmdline" pid=30735 comm="evince" requested_mask="r" denied_mask="r" fsuid=1000 ouid=1000
+[373776.528815] type=1400 audit(1435319412.686:162): apparmor="DENIED" operation="exec" profile="/usr/bin/evince" name="/usr/bin/kde4-config" pid=30737 comm="evince" requested_mask="x" denied_mask="x" fsuid=1000 ouid=0
+[373776.529907] type=1400 audit(1435319412.686:163): apparmor="DENIED" operation="exec" profile="/usr/bin/evince" name="/usr/bin/kde4-config" pid=30738 comm="evince" requested_mask="x" denied_mask="x" fsuid=1000 ouid=0
+[373810.677346] sdb: detected capacity change from 506986496 to 0
+[373819.644365] usb 1-4: USB disconnect, device number 10
+[374063.012025] usb 1-4: new high-speed USB device number 11 using ehci-pci
+[374063.146469] usb 1-4: New USB device found, idVendor=058f, idProduct=6387
+[374063.146474] usb 1-4: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[374063.146477] usb 1-4: Product: Mass Storage Device
+[374063.146480] usb 1-4: Manufacturer: JetFlash
+[374063.146482] usb 1-4: SerialNumber: JAX2ZRC2
+[374063.146764] usb-storage 1-4:1.0: USB Mass Storage device detected
+[374063.146839] scsi9 : usb-storage 1-4:1.0
+[374064.144745] scsi 9:0:0:0: Direct-Access     JetFlash Transcend 2GB    8.07 PQ: 0 ANSI: 2
+[374064.145049] sd 9:0:0:0: Attached scsi generic sg1 type 0
+[374064.146357] sd 9:0:0:0: [sdb] 3944448 512-byte logical blocks: (2.01 GB/1.88 GiB)
+[374064.150108] sd 9:0:0:0: [sdb] Write Protect is off
+[374064.150114] sd 9:0:0:0: [sdb] Mode Sense: 03 00 00 00
+[374064.150728] sd 9:0:0:0: [sdb] No Caching mode page found
+[374064.150732] sd 9:0:0:0: [sdb] Assuming drive cache: write through
+[374064.154731] sd 9:0:0:0: [sdb] No Caching mode page found
+[374064.154736] sd 9:0:0:0: [sdb] Assuming drive cache: write through
+[374064.186749]  sdb: sdb1 sdb2
+[374064.189603] sd 9:0:0:0: [sdb] No Caching mode page found
+[374064.189608] sd 9:0:0:0: [sdb] Assuming drive cache: write through
+[374064.189612] sd 9:0:0:0: [sdb] Attached SCSI removable disk
+[374173.100071] EXT4-fs (sdb2): mounted filesystem with ordered data mode. Opts: (null)
+[376577.492552] usb 1-4: USB disconnect, device number 11
+[426115.823768] type=1400 audit(1435371751.980:164): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="/usr/lib/cups/backend/cups-pdf" pid=2912 comm="apparmor_parser"
+[426115.823777] type=1400 audit(1435371751.980:165): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="/usr/sbin/cupsd" pid=2912 comm="apparmor_parser"
+[426115.824279] type=1400 audit(1435371751.984:166): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="/usr/sbin/cupsd" pid=2912 comm="apparmor_parser"
+[443640.540029] usb 1-4: new high-speed USB device number 12 using ehci-pci
+[443640.674504] usb 1-4: New USB device found, idVendor=058f, idProduct=6387
+[443640.674509] usb 1-4: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[443640.674512] usb 1-4: Product: Mass Storage Device
+[443640.674515] usb 1-4: Manufacturer: JetFlash
+[443640.674517] usb 1-4: SerialNumber: JAX2ZRC2
+[443640.674800] usb-storage 1-4:1.0: USB Mass Storage device detected
+[443640.674876] scsi10 : usb-storage 1-4:1.0
+[443641.672782] scsi 10:0:0:0: Direct-Access     JetFlash Transcend 2GB    8.07 PQ: 0 ANSI: 2
+[443641.673086] sd 10:0:0:0: Attached scsi generic sg1 type 0
+[443641.678393] sd 10:0:0:0: [sdb] 3944448 512-byte logical blocks: (2.01 GB/1.88 GiB)
+[443641.679010] sd 10:0:0:0: [sdb] Write Protect is off
+[443641.679015] sd 10:0:0:0: [sdb] Mode Sense: 03 00 00 00
+[443641.679637] sd 10:0:0:0: [sdb] No Caching mode page found
+[443641.679641] sd 10:0:0:0: [sdb] Assuming drive cache: write through
+[443641.682635] sd 10:0:0:0: [sdb] No Caching mode page found
+[443641.682639] sd 10:0:0:0: [sdb] Assuming drive cache: write through
+[443641.705781]  sdb: sdb1 sdb2
+[443641.708637] sd 10:0:0:0: [sdb] No Caching mode page found
+[443641.708641] sd 10:0:0:0: [sdb] Assuming drive cache: write through
+[443641.708645] sd 10:0:0:0: [sdb] Attached SCSI removable disk
+[443647.764797] EXT4-fs (sdb2): recovery complete
+[443647.765762] EXT4-fs (sdb2): mounted filesystem with ordered data mode. Opts: (null)
+[443750.450974] usb 1-4: USB disconnect, device number 12
+[459061.600022] usb 1-4: new high-speed USB device number 13 using ehci-pci
+[459061.734515] usb 1-4: New USB device found, idVendor=058f, idProduct=6387
+[459061.734520] usb 1-4: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[459061.734523] usb 1-4: Product: Mass Storage Device
+[459061.734526] usb 1-4: Manufacturer: JetFlash
+[459061.734528] usb 1-4: SerialNumber: JAX2ZRC2
+[459061.734808] usb-storage 1-4:1.0: USB Mass Storage device detected
+[459061.734878] scsi11 : usb-storage 1-4:1.0
+[459062.732793] scsi 11:0:0:0: Direct-Access     JetFlash Transcend 2GB    8.07 PQ: 0 ANSI: 2
+[459062.733086] sd 11:0:0:0: Attached scsi generic sg1 type 0
+[459062.736544] sd 11:0:0:0: [sdb] 3944448 512-byte logical blocks: (2.01 GB/1.88 GiB)
+[459062.737160] sd 11:0:0:0: [sdb] Write Protect is off
+[459062.737165] sd 11:0:0:0: [sdb] Mode Sense: 03 00 00 00
+[459062.737846] sd 11:0:0:0: [sdb] No Caching mode page found
+[459062.737851] sd 11:0:0:0: [sdb] Assuming drive cache: write through
+[459062.742026] sd 11:0:0:0: [sdb] No Caching mode page found
+[459062.742032] sd 11:0:0:0: [sdb] Assuming drive cache: write through
+[459062.761068]  sdb: sdb1 sdb2
+[459062.763899] sd 11:0:0:0: [sdb] No Caching mode page found
+[459062.763904] sd 11:0:0:0: [sdb] Assuming drive cache: write through
+[459062.763907] sd 11:0:0:0: [sdb] Attached SCSI removable disk
+[459087.331937] EXT4-fs (sdb2): mounted filesystem with ordered data mode. Opts: (null)
+[459100.347312] EXT4-fs (sdb2): mounted filesystem with ordered data mode. Opts: (null)
+[459150.260601] usb 1-4: USB disconnect, device number 13
+[512941.290867] type=1400 audit(1435458577.450:167): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="/usr/lib/cups/backend/cups-pdf" pid=8810 comm="apparmor_parser"
+[512941.290876] type=1400 audit(1435458577.450:168): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="/usr/sbin/cupsd" pid=8810 comm="apparmor_parser"
+[512941.291335] type=1400 audit(1435458577.450:169): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="/usr/sbin/cupsd" pid=8810 comm="apparmor_parser"
+[598007.890781] type=1400 audit(1435543644.048:170): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="/usr/lib/cups/backend/cups-pdf" pid=14600 comm="apparmor_parser"
+[598007.890790] type=1400 audit(1435543644.048:171): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="/usr/sbin/cupsd" pid=14600 comm="apparmor_parser"
+[598007.891245] type=1400 audit(1435543644.048:172): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="/usr/sbin/cupsd" pid=14600 comm="apparmor_parser"
+[605521.400025] usb 1-4: new high-speed USB device number 14 using ehci-pci
+[605521.534522] usb 1-4: New USB device found, idVendor=058f, idProduct=6387
+[605521.534526] usb 1-4: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[605521.534530] usb 1-4: Product: Mass Storage Device
+[605521.534532] usb 1-4: Manufacturer: JetFlash
+[605521.534535] usb 1-4: SerialNumber: JAX2ZRC2
+[605521.534816] usb-storage 1-4:1.0: USB Mass Storage device detected
+[605521.534891] scsi12 : usb-storage 1-4:1.0
+[605522.532798] scsi 12:0:0:0: Direct-Access     JetFlash Transcend 2GB    8.07 PQ: 0 ANSI: 2
+[605522.533090] sd 12:0:0:0: Attached scsi generic sg1 type 0
+[605522.534541] sd 12:0:0:0: [sdb] 3944448 512-byte logical blocks: (2.01 GB/1.88 GiB)
+[605522.538642] sd 12:0:0:0: [sdb] Write Protect is off
+[605522.538648] sd 12:0:0:0: [sdb] Mode Sense: 03 00 00 00
+[605522.539401] sd 12:0:0:0: [sdb] No Caching mode page found
+[605522.539406] sd 12:0:0:0: [sdb] Assuming drive cache: write through
+[605522.543532] sd 12:0:0:0: [sdb] No Caching mode page found
+[605522.543537] sd 12:0:0:0: [sdb] Assuming drive cache: write through
+[605522.560307]  sdb: sdb1 sdb2
+[605522.563156] sd 12:0:0:0: [sdb] No Caching mode page found
+[605522.563160] sd 12:0:0:0: [sdb] Assuming drive cache: write through
+[605522.563164] sd 12:0:0:0: [sdb] Attached SCSI removable disk
+[605817.107278] EXT4-fs (sdb2): mounted filesystem with ordered data mode. Opts: (null)
+[606221.752024] usb 1-6: new high-speed USB device number 15 using ehci-pci
+[606221.884864] usb 1-6: New USB device found, idVendor=0781, idProduct=557e
+[606221.884869] usb 1-6: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[606221.884872] usb 1-6: Product: USB Flash Drive
+[606221.884875] usb 1-6: Manufacturer: SanDisk
+[606221.884877] usb 1-6: SerialNumber: 4C530011771230102350
+[606221.885154] usb-storage 1-6:1.0: USB Mass Storage device detected
+[606221.885930] scsi13 : usb-storage 1-6:1.0
+[606222.885014] scsi 13:0:0:0: Direct-Access     SanDisk  USB Flash Drive  1.26 PQ: 0 ANSI: 6
+[606222.885321] sd 13:0:0:0: Attached scsi generic sg2 type 0
+[606222.887761] sd 13:0:0:0: [sdc] 31266816 512-byte logical blocks: (16.0 GB/14.9 GiB)
+[606222.889713] sd 13:0:0:0: [sdc] Write Protect is off
+[606222.889719] sd 13:0:0:0: [sdc] Mode Sense: 43 00 00 00
+[606222.890880] sd 13:0:0:0: [sdc] Write cache: disabled, read cache: enabled, doesn't support DPO or FUA
+[606222.903524]  sdc: sdc1
+[606222.908747] sd 13:0:0:0: [sdc] Attached SCSI disk
+[606327.208958] usb 1-6: USB disconnect, device number 15
+[610037.410469] usb 1-4: USB disconnect, device number 14
+[618855.280021] usb 1-4: new high-speed USB device number 16 using ehci-pci
+[618855.414523] usb 1-4: New USB device found, idVendor=058f, idProduct=6387
+[618855.414528] usb 1-4: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[618855.414531] usb 1-4: Product: Mass Storage Device
+[618855.414534] usb 1-4: Manufacturer: JetFlash
+[618855.414536] usb 1-4: SerialNumber: JAX2ZRC2
+[618855.414817] usb-storage 1-4:1.0: USB Mass Storage device detected
+[618855.414903] scsi14 : usb-storage 1-4:1.0
+[618856.412807] scsi 14:0:0:0: Direct-Access     JetFlash Transcend 2GB    8.07 PQ: 0 ANSI: 2
+[618856.413126] sd 14:0:0:0: Attached scsi generic sg1 type 0
+[618856.416559] sd 14:0:0:0: [sdb] 3944448 512-byte logical blocks: (2.01 GB/1.88 GiB)
+[618856.417174] sd 14:0:0:0: [sdb] Write Protect is off
+[618856.417179] sd 14:0:0:0: [sdb] Mode Sense: 03 00 00 00
+[618856.419209] sd 14:0:0:0: [sdb] No Caching mode page found
+[618856.419214] sd 14:0:0:0: [sdb] Assuming drive cache: write through
+[618856.422657] sd 14:0:0:0: [sdb] No Caching mode page found
+[618856.422663] sd 14:0:0:0: [sdb] Assuming drive cache: write through
+[618856.434551]  sdb: sdb1 sdb2
+[618856.437405] sd 14:0:0:0: [sdb] No Caching mode page found
+[618856.437410] sd 14:0:0:0: [sdb] Assuming drive cache: write through
+[618856.437413] sd 14:0:0:0: [sdb] Attached SCSI removable disk
+[619284.414075] EXT4-fs (sdb2): mounted filesystem with ordered data mode. Opts: (null)
+[633489.361449] usb 1-4: USB disconnect, device number 16
+[684662.380436] type=1400 audit(1435630298.538:173): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="/usr/lib/cups/backend/cups-pdf" pid=21026 comm="apparmor_parser"
+[684662.380445] type=1400 audit(1435630298.538:174): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="/usr/sbin/cupsd" pid=21026 comm="apparmor_parser"
+[684662.380901] type=1400 audit(1435630298.538:175): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="/usr/sbin/cupsd" pid=21026 comm="apparmor_parser"
+[691024.492029] usb 1-4: new high-speed USB device number 17 using ehci-pci
+[691024.626440] usb 1-4: New USB device found, idVendor=058f, idProduct=6387
+[691024.626444] usb 1-4: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[691024.626448] usb 1-4: Product: Mass Storage Device
+[691024.626450] usb 1-4: Manufacturer: JetFlash
+[691024.626453] usb 1-4: SerialNumber: JAX2ZRC2
+[691024.626732] usb-storage 1-4:1.0: USB Mass Storage device detected
+[691024.626809] scsi15 : usb-storage 1-4:1.0
+[691025.624847] scsi 15:0:0:0: Direct-Access     JetFlash Transcend 2GB    8.07 PQ: 0 ANSI: 2
+[691025.625208] sd 15:0:0:0: Attached scsi generic sg1 type 0
+[691025.628825] sd 15:0:0:0: [sdb] 3944448 512-byte logical blocks: (2.01 GB/1.88 GiB)
+[691025.629442] sd 15:0:0:0: [sdb] Write Protect is off
+[691025.629446] sd 15:0:0:0: [sdb] Mode Sense: 03 00 00 00
+[691025.630695] sd 15:0:0:0: [sdb] No Caching mode page found
+[691025.630700] sd 15:0:0:0: [sdb] Assuming drive cache: write through
+[691025.634700] sd 15:0:0:0: [sdb] No Caching mode page found
+[691025.634705] sd 15:0:0:0: [sdb] Assuming drive cache: write through
+[691025.644745]  sdb: sdb1 sdb2
+[691025.647323] sd 15:0:0:0: [sdb] No Caching mode page found
+[691025.647327] sd 15:0:0:0: [sdb] Assuming drive cache: write through
+[691025.647330] sd 15:0:0:0: [sdb] Attached SCSI removable disk
+[691029.589730] EXT4-fs (sdb2): mounted filesystem with ordered data mode. Opts: (null)
+[691143.274551] type=1400 audit(1435636779.430:176): apparmor="DENIED" operation="open" profile="/usr/bin/evince" name="/proc/21597/cmdline" pid=21597 comm="evince" requested_mask="r" denied_mask="r" fsuid=1000 ouid=1000
+[691143.311423] type=1400 audit(1435636779.466:177): apparmor="DENIED" operation="exec" profile="/usr/bin/evince" name="/usr/bin/kde4-config" pid=21599 comm="evince" requested_mask="x" denied_mask="x" fsuid=1000 ouid=0
+[691143.312764] type=1400 audit(1435636779.470:178): apparmor="DENIED" operation="exec" profile="/usr/bin/evince" name="/usr/bin/kde4-config" pid=21600 comm="evince" requested_mask="x" denied_mask="x" fsuid=1000 ouid=0
+[699724.051570] type=1400 audit(1435645360.207:179): apparmor="DENIED" operation="open" profile="/usr/bin/evince" name="/proc/22835/cmdline" pid=22835 comm="evince" requested_mask="r" denied_mask="r" fsuid=1000 ouid=1000
+[699724.063861] type=1400 audit(1435645360.219:180): apparmor="DENIED" operation="exec" profile="/usr/bin/evince" name="/usr/bin/kde4-config" pid=22837 comm="evince" requested_mask="x" denied_mask="x" fsuid=1000 ouid=0
+[699724.065168] type=1400 audit(1435645360.223:181): apparmor="DENIED" operation="exec" profile="/usr/bin/evince" name="/usr/bin/kde4-config" pid=22838 comm="evince" requested_mask="x" denied_mask="x" fsuid=1000 ouid=0
+[701703.593800] DCCP: Activated CCID 2 (TCP-like)
+[701940.167006] type=1400 audit(1435647576.323:182): apparmor="DENIED" operation="open" profile="/usr/bin/evince" name="/proc/23310/cmdline" pid=23310 comm="evince" requested_mask="r" denied_mask="r" fsuid=1000 ouid=1000
+[701940.168880] type=1400 audit(1435647576.327:183): apparmor="DENIED" operation="exec" profile="/usr/bin/evince" name="/usr/bin/kde4-config" pid=23312 comm="evince" requested_mask="x" denied_mask="x" fsuid=1000 ouid=0
+[701940.170131] type=1400 audit(1435647576.327:184): apparmor="DENIED" operation="exec" profile="/usr/bin/evince" name="/usr/bin/kde4-config" pid=23313 comm="evince" requested_mask="x" denied_mask="x" fsuid=1000 ouid=0
+[702282.440464] type=1400 audit(1435647918.599:185): apparmor="DENIED" operation="open" profile="/usr/bin/evince" name="/proc/23363/cmdline" pid=23363 comm="evince" requested_mask="r" denied_mask="r" fsuid=1000 ouid=1000
+[702282.441654] type=1400 audit(1435647918.599:186): apparmor="DENIED" operation="exec" profile="/usr/bin/evince" name="/usr/bin/kde4-config" pid=23367 comm="evince" requested_mask="x" denied_mask="x" fsuid=1000 ouid=0
+[702282.442946] type=1400 audit(1435647918.599:187): apparmor="DENIED" operation="exec" profile="/usr/bin/evince" name="/usr/bin/kde4-config" pid=23368 comm="evince" requested_mask="x" denied_mask="x" fsuid=1000 ouid=0
+[706528.275644] usb 1-4: USB disconnect, device number 17
+[712869.076023] usb 1-4: new high-speed USB device number 18 using ehci-pci
+[712869.210484] usb 1-4: New USB device found, idVendor=058f, idProduct=6387
+[712869.210488] usb 1-4: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[712869.210492] usb 1-4: Product: Mass Storage Device
+[712869.210494] usb 1-4: Manufacturer: JetFlash
+[712869.210497] usb 1-4: SerialNumber: JAX2ZRC2
+[712869.210779] usb-storage 1-4:1.0: USB Mass Storage device detected
+[712869.210859] scsi16 : usb-storage 1-4:1.0
+[712870.208759] scsi 16:0:0:0: Direct-Access     JetFlash Transcend 2GB    8.07 PQ: 0 ANSI: 2
+[712870.209049] sd 16:0:0:0: Attached scsi generic sg1 type 0
+[712870.210244] sd 16:0:0:0: [sdb] 3944448 512-byte logical blocks: (2.01 GB/1.88 GiB)
+[712870.212310] sd 16:0:0:0: [sdb] Write Protect is off
+[712870.212316] sd 16:0:0:0: [sdb] Mode Sense: 03 00 00 00
+[712870.214891] sd 16:0:0:0: [sdb] No Caching mode page found
+[712870.214896] sd 16:0:0:0: [sdb] Assuming drive cache: write through
+[712870.218619] sd 16:0:0:0: [sdb] No Caching mode page found
+[712870.218625] sd 16:0:0:0: [sdb] Assuming drive cache: write through
+[712870.866030]  sdb: sdb1 sdb2
+[712871.108752] sd 16:0:0:0: [sdb] No Caching mode page found
+[712871.108758] sd 16:0:0:0: [sdb] Assuming drive cache: write through
+[712871.108763] sd 16:0:0:0: [sdb] Attached SCSI removable disk
+[712876.292530] EXT4-fs (sdb2): mounted filesystem with ordered data mode. Opts: (null)
+[713037.250223] usb 1-4: USB disconnect, device number 18
+[714470.612024] usb 1-4: new high-speed USB device number 19 using ehci-pci
+[714470.746484] usb 1-4: New USB device found, idVendor=058f, idProduct=6387
+[714470.746488] usb 1-4: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[714470.746491] usb 1-4: Product: Mass Storage Device
+[714470.746494] usb 1-4: Manufacturer: JetFlash
+[714470.746497] usb 1-4: SerialNumber: JAX2ZRC2
+[714470.746770] usb-storage 1-4:1.0: USB Mass Storage device detected
+[714470.746842] scsi17 : usb-storage 1-4:1.0
+[714471.744759] scsi 17:0:0:0: Direct-Access     JetFlash Transcend 2GB    8.07 PQ: 0 ANSI: 2
+[714471.745033] sd 17:0:0:0: Attached scsi generic sg1 type 0
+[714471.747177] sd 17:0:0:0: [sdb] 3944448 512-byte logical blocks: (2.01 GB/1.88 GiB)
+[714471.749770] sd 17:0:0:0: [sdb] Write Protect is off
+[714471.749776] sd 17:0:0:0: [sdb] Mode Sense: 03 00 00 00
+[714471.750376] sd 17:0:0:0: [sdb] No Caching mode page found
+[714471.750381] sd 17:0:0:0: [sdb] Assuming drive cache: write through
+[714471.753872] sd 17:0:0:0: [sdb] No Caching mode page found
+[714471.753879] sd 17:0:0:0: [sdb] Assuming drive cache: write through
+[714472.267651]  sdb: sdb1 sdb2
+[714472.501252] sd 17:0:0:0: [sdb] No Caching mode page found
+[714472.501259] sd 17:0:0:0: [sdb] Assuming drive cache: write through
+[714472.501264] sd 17:0:0:0: [sdb] Attached SCSI removable disk
+[714475.401294] EXT4-fs (sdb2): mounted filesystem with ordered data mode. Opts: (null)
+[723196.241467] usb 1-4: USB disconnect, device number 19
+[772196.421257] type=1400 audit(1435717832.580:188): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="/usr/lib/cups/backend/cups-pdf" pid=29054 comm="apparmor_parser"
+[772196.421268] type=1400 audit(1435717832.580:189): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="/usr/sbin/cupsd" pid=29054 comm="apparmor_parser"
+[772196.421876] type=1400 audit(1435717832.580:190): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="/usr/sbin/cupsd" pid=29054 comm="apparmor_parser"
+[778296.592029] usb 1-4: new high-speed USB device number 20 using ehci-pci
+[778296.726452] usb 1-4: New USB device found, idVendor=058f, idProduct=6387
+[778296.726457] usb 1-4: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[778296.726460] usb 1-4: Product: Mass Storage Device
+[778296.726462] usb 1-4: Manufacturer: JetFlash
+[778296.726465] usb 1-4: SerialNumber: JAX2ZRC2
+[778296.726747] usb-storage 1-4:1.0: USB Mass Storage device detected
+[778296.726814] scsi18 : usb-storage 1-4:1.0
+[778297.724860] scsi 18:0:0:0: Direct-Access     JetFlash Transcend 2GB    8.07 PQ: 0 ANSI: 2
+[778297.725170] sd 18:0:0:0: Attached scsi generic sg1 type 0
+[778297.726594] sd 18:0:0:0: [sdb] 3944448 512-byte logical blocks: (2.01 GB/1.88 GiB)
+[778297.727857] sd 18:0:0:0: [sdb] Write Protect is off
+[778297.727862] sd 18:0:0:0: [sdb] Mode Sense: 03 00 00 00
+[778297.728475] sd 18:0:0:0: [sdb] No Caching mode page found
+[778297.728480] sd 18:0:0:0: [sdb] Assuming drive cache: write through
+[778297.733970] sd 18:0:0:0: [sdb] No Caching mode page found
+[778297.733975] sd 18:0:0:0: [sdb] Assuming drive cache: write through
+[778298.005367]  sdb: sdb1 sdb2
+[778298.008216] sd 18:0:0:0: [sdb] No Caching mode page found
+[778298.008220] sd 18:0:0:0: [sdb] Assuming drive cache: write through
+[778298.008223] sd 18:0:0:0: [sdb] Attached SCSI removable disk
+[778302.971509] EXT4-fs (sdb2): mounted filesystem with ordered data mode. Opts: (null)

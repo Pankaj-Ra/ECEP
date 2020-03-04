@@ -1,0 +1,2 @@
+read N
+echo $num

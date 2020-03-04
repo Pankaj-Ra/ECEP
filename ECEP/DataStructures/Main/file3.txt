@@ -1,0 +1,5 @@
+apple orange amego banana lemon apple
+orange apple potato amego banana
+potato orange lemon amego potato mango
+lemon amego mango apple banana mango
+banana apple

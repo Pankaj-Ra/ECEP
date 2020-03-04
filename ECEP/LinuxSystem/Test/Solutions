@@ -1,0 +1,38 @@
+Q1 - shift o  |  o 
+Q2 - shift p  |  p 
+Q3 - shift a  |  shift i
+Q3 - nw       |  nb
+Q4 - Home     |  End
+Q5 - 
+Q6 - shift+d
+Q7 - :%s/abc/xyz/g
+Q8 - :%s/abc/xyz/
+Q9 - ngg
+Q10- ndw      | ncw 
+Q11- 
+Q12- Insert   | v
+Q13- :w filename
+Q14- f(word initials) | shift+f
+
+S2
+Q1 - Tab
+Q2 - ls .
+Q3 - ls filename -l | chmod <type the permissions u want to grant like;- a+x,u+x,a+r etc.> filename 
+Q4 - chmod 700 xyz
+Q5 - 
+Q6 - mv x y   |   mv Abc/ Xyz/
+Q7 - cd .
+Q8 - cp ../D1/D6/F3/ D4
+Q9 - cp -r ../D1/ ../
+Q10- mv ../D1/D6/F2/ D4/
+Q11- mv ../D3/F4/ ../../../U3/
+Q12- ls ../../../U3/ -a 
+Q13- ls ../ -a 
+Q14- ls /HOME/U1/D1/D6/ -a
+Q15- vi ../D1/F1
+Q16- vi ../F4
+Q17- mv ../D1/D6/F3/ f3
+Q18- ls ../D1/ -r
+Q19- cat filename
+
+

@@ -1,0 +1,20 @@
+total 152
+-rwxr-xr-x 1 pankaj users 13215 Nov 20 11:41 a.out
+-rw-r--r-- 1 pankaj users  1961 Nov 20 11:41 chat_box_client.c
+-rw-r--r-- 1 pankaj users  2148 Nov 20 11:41 chat_box_server.c
+-rwxr-xr-x 1 pankaj users 12908 Nov 20 11:41 client
+-rw-r--r-- 1 pankaj users  1404 Nov 20 11:41 client_socket.c
+-rw-r--r-- 1 pankaj users     0 Nov 25 10:13 dest.txt
+-rw-r--r-- 1 pankaj users     1 Nov 20 12:09 relay_ajent.c
+-rwxr-xr-x 1 pankaj users 13225 Nov 24 11:09 remote_client
+-rw-r--r-- 1 pankaj users  2453 Nov 24 11:24 remote_cmd_udp_client.c
+-rw-r--r-- 1 pankaj users  2555 Nov 25 09:59 remote_cmd_udp_server.c
+-rwxr-xr-x 1 pankaj users 17484 Nov 25 10:00 remote_server
+-rwxr-xr-x 1 pankaj users 13010 Nov 20 11:41 server
+-rw-r--r-- 1 pankaj users  1273 Nov 20 11:41 server_socket.c
+drwxr-xr-x 6 pankaj users    64 Nov 14 16:50 Socket
+-rw-rw-rw- 1 pankaj users     0 Dec  3 10:52 source.txt
+-rwxr-xr-x 1 pankaj users 13007 Nov 20 11:41 udp_client
+-rw-r--r-- 1 pankaj users  1327 Nov 20 11:41 udp_client.c
+-rwxr-xr-x 1 pankaj users 13009 Nov 20 11:41 udp_serv
+-rw-r--r-- 1 pankaj users  1253 Nov 20 11:41 udp_server.c

@@ -1,0 +1,20 @@
+#!/bin/bash
+clear
+echo "Mathematical Expression"
+
+echo  "Enter Two Operands & One Operator"
+echo -n "Enter First Oparand : "
+read x
+echo -n "Enter Second Oparand : "
+read y
+echo -n "enter the Operator : "
+read z
+
+sum=`echo ${x} "${z}" ${y} | bc `
+echo "The $z of two Operands is : $sum "
+# ${z} -> if u pass '*' it expands
+# "${z}" -> It will pass as a string
+sum=`expr ${x} "${z}" ${y}`
+echo "The $z of two Operands is : $sum "
+sum=$((${x} ${z} ${y}))
+echo "The $z of two Operands is : $sum "

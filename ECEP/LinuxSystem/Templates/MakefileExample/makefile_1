@@ -1,0 +1,23 @@
+# top-level rule to compile the whole program.
+CC=gcc
+all: run
+
+# program is made of several source files.
+run: main.o file1.o file2.o
+	gcc main.o file1.o file2.o -o run
+
+# rule for file "main.o".
+main.o: main.c file1.h file2.h
+	gcc -g -Wall -c main.c
+
+# rule for file "file1.o".
+file1.o: file1.c file1.h
+	gcc -g -Wall -c file1.c
+
+# rule for file "file2.o".
+file2.o: file2.c file2.h
+	gcc -g -Wall -c file2.c
+
+# rule for cleaning files generated during compilations.
+clean:
+	rm -f run main.o file1.o file2.o

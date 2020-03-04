@@ -1,0 +1,15 @@
+Q1 - shift o  |  o 
+Q2 - shift p  |  p 
+Q3 - shift a  |  shift i
+Q3 - nw       |  nb
+Q4 - Home     |  End
+Q5 - 
+Q6 - shift+d
+Q7 - :%s/abc/xyz/g
+Q8 - :n%s/abc/xyz/
+Q9 - ngg
+Q10- ndw      | ncw 
+Q11- 
+Q12- Insert   | v
+Q13- 
+

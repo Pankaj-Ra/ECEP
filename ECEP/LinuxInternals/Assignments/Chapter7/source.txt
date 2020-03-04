@@ -1,0 +1,5 @@
+total 24
+-rwxr-xr-x 1 pankaj users 13114 Nov 19 17:13 a.out
+-rw-r--r-- 1 pankaj users   232 Nov 19 17:13 dest.txt
+-rw-r--r-- 1 pankaj users  1086 Nov 19 17:24 implement_pipe.c
+-rw-r--r-- 1 pankaj users     0 Nov 19 17:24 source.txt

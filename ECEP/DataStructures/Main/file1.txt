@@ -1,0 +1,4 @@
+ 123     apple orange lemon apple
+orange apple amego potato
+potato amego 456  orange lemon amego potato mango
+lemon mango apple
